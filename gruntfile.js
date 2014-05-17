@@ -74,7 +74,8 @@ module.exports = function (grunt) {
                 options: {
                     processContent: function (content, srcPath) {
                         content = content.replace(/src=(.*)\.js[^'">\s]*/mg, 'src=$1.js?v=' + buildVersion)
-                            .replace(/href=(.*)\.css[^'">\s]*/mg, 'href=$1.css?v=' + buildVersion);
+                            .replace(/href=(.*)\.css[^'">\s]*/mg, 'href=$1.css?v=' + buildVersion)
+							.replace(/.*livereload.*/mg, '');
 
                         return content;
                     }
