@@ -1,0 +1,11 @@
+{
+    "curly": true,
+    "noarg": true,
+    "forin": true,
+    "noempty": true,
+    "quotmark": true,
+    "undef": true,
+    "browser": true,
+
+    "predef": ["jQuery", "_", "$", "define", "require"]
+}
