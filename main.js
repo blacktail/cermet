@@ -3,7 +3,10 @@ define([
 	'backbone',
 	'jquery',
 	'handlebars',
-	'bootstrap'
+	'bootstrap',
+	'cmcore',
+	'cmutils',
+	'commons/cermet/templates'
 ], function () {
 	// we must use 'switchToPath/index' here for requirejs build optimization
 	require(['app1/index'], function () {
