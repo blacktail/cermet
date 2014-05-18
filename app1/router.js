@@ -4,7 +4,8 @@ define([
 ], function (Backbone, Workspace) {
     return Backbone.Router.extend({
         routes: {
-            '(tab=:tab)': 'showWorkspace'
+            '(tab=:tab)': 'showWorkspace',
+			'*any': 'redirect'
         },
 
         initialize: function () {
@@ -24,6 +25,12 @@ define([
 
 			$('#main').append(this.workspace.$el);
 			this.workspace.render();
-        }
+        },
+
+		redirect: function (any) {
+			console.log(any);
+
+			this.showWorkspace();
+		}
     });
 });
