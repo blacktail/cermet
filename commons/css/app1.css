@@ -2,3 +2,10 @@
     padding-top: 70px;
 }
 
+#workspace .logo {
+    background: url(../imgs/logo.png) no-repeat;
+    text-indent: -99999px;
+    width: 64px;
+    height: 50px;
+}
+
