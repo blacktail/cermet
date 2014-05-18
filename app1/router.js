@@ -12,6 +12,8 @@ define([
         },
 
         showWorkspace: function (tab) {
+			tab = tab || 'task';
+
             if (this.workspace) {
                 this.workspace.remove();
             }

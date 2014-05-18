@@ -9,12 +9,15 @@ define([
 		template: templates['app1/Workspace'],
 
 		initialize: function (options) {
+			this.activeTab = options.tab;
 		},
 
 		render: function () {
 			this.freeChildren();
 
-			this.$el.html(this.template());
+			this.$el.html(this.template({
+				active: this.activeTab
+			}));
 		}
     });
 });

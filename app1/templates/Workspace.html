@@ -1,1 +1,9 @@
-<div>Workspace</div>
+<div id="workspace">
+    <ul class="nav nav-tabs">
+        <li {{#ifequal active "task"}}class="active"{{/ifequal}}><a href="#">Task</a></li>
+        <li {{#ifequal active "resource"}}class="active"{{/ifequal}}><a href="#">Resource</a></li>
+        <li {{#ifequal active "case"}}class="active"{{/ifequal}}><a href="#">Case</a></li>
+        <li {{#ifequal active "config"}}class="active"{{/ifequal}}><a href="#">Configuration</a></li>
+        <li {{#ifequal active "plugin"}}class="active"{{/ifequal}}><a href="#">Plugin</a></li>
+    </ul>
+</div>
