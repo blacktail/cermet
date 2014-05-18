@@ -27,7 +27,7 @@ define([
 
         },
 
-        registerComponent: function (name, component) {
+        registerComponent: function (name, component, container) {
             var i;
 
             this._components = this._components || {};
@@ -41,6 +41,11 @@ define([
 
                 comp.remove();
             }
+
+			if (container) {
+				this.$(container).append(component.el);
+				component.render();
+			}
 
             this._components[name] = component;
 
@@ -64,8 +69,8 @@ define([
             }
 
             this.listenTo(component, 'all', function (eventName) {
-                if (!this._events[eventName]) {
-                    this.trigger(eventName, _.rest(arguments));
+                if (!component._events || !component._events[eventName]) {
+                    this.trigger.apply(this, arguments);
                 }
             });
 
