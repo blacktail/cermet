@@ -3,7 +3,7 @@ define([
 	'app1/templates'
 ], function (CM, templates) {
 	return CM.View.extend({
-		template: templates['app1/TaskItem'],
+		template: templates['app1/task/TaskItem'],
 
 		initialize: function () {
 

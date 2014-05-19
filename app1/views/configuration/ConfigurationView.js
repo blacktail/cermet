@@ -3,7 +3,7 @@ define([
 	'app1/templates'
 ], function (CM, templates) {
 	return CM.View.extend({
-		template: templates['app1/Configuration'],
+		template: templates['app1/configuration/Configuration'],
 
 		initialize: function () {
 
