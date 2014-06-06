@@ -42,30 +42,32 @@ define([
                 comp.remove();
             }
 
-			if (container) {
-				this.$(container).append(component.el);
-				component.render();
-			}
+            if (container) {
+                this.$(container).append(component.el);
+                component.render();
+            }
 
             this._components[name] = component;
+            component._parentView = this;
+            component._componentName = name;
 
             var delegateEventSplitter = /^(\S+)\s*(.*)$/;
 
             for (var key in this.appEvents) {
-				if (this.appEvents.hasOwnProperty(key)) {
-					var funcName = this.appEvents[key];
-					var match = key.match(delegateEventSplitter);
-					var eventName = match[1],
-						selector = match[2];
+                if (this.appEvents.hasOwnProperty(key)) {
+                    var funcName = this.appEvents[key];
+                    var match = key.match(delegateEventSplitter);
+                    var eventName = match[1],
+                        selector = match[2];
 
-					if (selector === name) {
-						var eventNames = eventName.split(/,/);
+                    if (selector === name) {
+                        var eventNames = eventName.split(/,/);
 
-						for (i = 0; i < eventNames.length; i++) {
-							this.listenTo(component, eventNames[i], this[funcName]);
-						}
-					}
-				}
+                        for (i = 0; i < eventNames.length; i++) {
+                            this.listenTo(component, eventNames[i], this[funcName]);
+                        }
+                    }
+                }
             }
 
             this.listenTo(component, 'all', function (eventName) {
@@ -78,7 +80,7 @@ define([
         },
 
         getComponent: function(name) {
-            return this._components[name];
+            return _.isString(name) ? this._components[name] : _.find(name);
         },
 
         getComponents: function () {
@@ -87,18 +89,34 @@ define([
 
 		freeChildren: function () {
 			_.each(this._components, function(component, name) {
-				if (component.trigger) {
-					component.trigger('beforeRemove');
-				}
+                if (component === toRemove || !toRemove) {
+                    component.remove();
 
-				Backbone.View.prototype.remove.apply(component);
-			}, this);
+                    if (this._components[name]) {
+                        delete this._components[name];
+                    }
+                }
+            }, this);
 		},
 
         remove: function() {
-			this.freeChildren();
+			// remove all children view
+            this.freeChildren();
+
+            // remove self from parent view and stop all event listeners from parent which used to listen the child events
+            var parentView = this._parentView;
+            if (parentView) {
+                parentView.stopListening(this, 'all');
+
+                if (parentView._components) {
+                    delete parentView._components[this._componentName];
+                }
+
+                delete this._parentView;
+            }
+
             this.trigger('beforeRemove');
-			Backbone.View.prototype.remove.apply(this, arguments);
+            Backbone.View.prototype.remove.apply(this, arguments);
         }
     });
 
