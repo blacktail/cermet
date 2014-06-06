@@ -87,7 +87,7 @@ define([
             return this._components;
         },
 
-		freeChildren: function () {
+		freeChildren: function (toRemove) {
 			_.each(this._components, function(component, name) {
                 if (component === toRemove || !toRemove) {
                     component.remove();
