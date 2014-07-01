@@ -27,6 +27,14 @@ define([
 
         },
 
+        /**
+         * Register a sub view/component to the current view
+         *
+         * @param name The component name for the registered component, can be used in appEvents
+         * @param component The component reference
+         * @param container A dom container, used to append the component
+         * @returns {CM.View}
+         */
         registerComponent: function (name, component, container) {
             var i;
 
@@ -39,6 +47,7 @@ define([
                     comp.trigger('beforeRemove');
                 }
 
+                this.stopListening(comp, 'all');
                 comp.remove();
             }
 
@@ -51,7 +60,7 @@ define([
             component._parentView = this;
             component._componentName = name;
 
-            var delegateEventSplitter = /^(\S+)\s*(.*)$/;
+            var delegateEventSplitter = /^(\S+)\s*(\S+)$/;
 
             for (var key in this.appEvents) {
                 if (this.appEvents.hasOwnProperty(key)) {
@@ -79,28 +88,60 @@ define([
             return this;
         },
 
+
+        /**
+         * Get a component by the name
+         * @param name
+         * @returns {CM.View}
+         */
         getComponent: function(name) {
-            return _.isString(name) ? this._components[name] : _.find(name);
+            return this._components[name];
         },
 
         getComponents: function () {
             return this._components;
         },
 
-		freeChildren: function (toRemove) {
-			_.each(this._components, function(component, name) {
-                if (component === toRemove || !toRemove) {
+        /**
+         * Remove some subviews or all subviews from current view
+         * @param toRemove Only the specified components will be removed. Leave undefined to remove all subviews
+         */
+        freeChildren: function (toRemove) {
+            _.each(this._components, function(component, name) {
+                var removeFlag = false;
+
+                if (toRemove) {
+                    if (_.isRegExp(toRemove)) {
+                        removeFlag = toRemove.test(name);
+                    } else {
+                        removeFlag = toRemove === name || toRemove === component;
+                    }
+                } else {
+                    removeFlag = true;
+                }
+
+                if (removeFlag) {
+                    this.stopListening(component, 'all');
+
                     component.remove();
 
                     if (this._components[name]) {
                         delete this._components[name];
+                        delete component._parentView;
                     }
                 }
             }, this);
-		},
+        },
 
+        /**
+         * remove current view
+         *
+         * First, remove the sub views/components
+         * Second, remove self from the parent view
+         * Third, remove self
+         */
         remove: function() {
-			// remove all children view
+            // remove all children view
             this.freeChildren();
 
             // remove self from parent view and stop all event listeners from parent which used to listen the child events
@@ -119,6 +160,25 @@ define([
             Backbone.View.prototype.remove.apply(this, arguments);
         }
     });
+
+    var _oldExtend = CM.View.extend;
+
+    // redefine extend to inject the freeChildren method at the top of the render to prevent memory leak
+    CM.View.extend = function (protoProps, staticProps) {
+        if (protoProps.render) {
+            var _oldRender = protoProps.render;
+            protoProps.render = function () {
+                if (this.freeChildren) {
+                    this.freeChildren();
+                }
+
+                return _oldRender.apply(this, arguments);
+            };
+        }
+
+        return _oldExtend.call(this, protoProps, staticProps);
+    };
+
 
     return CM;
 });
