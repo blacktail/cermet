@@ -1,6 +1,6 @@
 define([
     'backbone',
-    './views/workspace'
+    './views/Workspace'
 ], function (Backbone, Workspace) {
     return Backbone.Router.extend({
         routes: {
