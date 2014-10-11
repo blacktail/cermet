@@ -275,7 +275,7 @@ function getRequirejsConfigHelper(type, inPath, outPath, isStartup) {
 	} else if (type == 'css') {
 		return {
 			options: {
-				optimizeCss: 'standard.keepLines',
+				optimizeCss: 'standard',
 				cssIn: inPath,
 				out: outPath
 			}

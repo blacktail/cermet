@@ -27,7 +27,7 @@ define([
 				backgroundColor: '#000',
 				'-webkit-border-radius': '10px',
 				'-moz-border-radius': '10px',
-				opacity: .5,
+				opacity: 0.5,
 				color: '#fff'
 			},
 			// styles for the overlay
@@ -102,7 +102,7 @@ define([
 				}
 
 				that.remove();
-			}
+			};
 
 			// process blockEl
 			if (this.options.hasOwnProperty('$blockEl')) {

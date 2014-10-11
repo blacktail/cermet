@@ -1,1396 +1,1396 @@
-/* line 3, ../sass2/icons.scss */
+/* line 3, ../sass/icons.scss */
 h1 .iconsWrapper {
   font-size: 16px;
 }
 
-/* line 7, ../sass2/icons.scss */
+/* line 7, ../sass/icons.scss */
 table {
   margin-bottom: 20px;
 }
 
-/* line 11, ../sass2/icons.scss */
+/* line 11, ../sass/icons.scss */
 .iconsWrapper .sectionTitle {
   font-size: 25px;
 }
 
-/* line 15, ../sass2/icons.scss */
+/* line 15, ../sass/icons.scss */
 .purpleBgd span {
   background-color: #621f71;
 }
 
-/* line 19, ../sass2/icons.scss */
+/* line 19, ../sass/icons.scss */
 .blueBgd span {
   background-color: #56b6d9;
 }
 
-/* line 23, ../sass2/icons.scss */
+/* line 23, ../sass/icons.scss */
 .icons24 {
   background: url('../images/icons/icons24.png?1412840944');
   width: 26px;
   height: 26px;
 }
 
-/* line 29, ../sass2/icons.scss */
+/* line 29, ../sass/icons.scss */
 .icons16 {
   background: url('../images/icons/icons16.png?1410758021');
   width: 18px;
   height: 18px;
 }
 
-/* line 35, ../sass2/icons.scss */
+/* line 35, ../sass/icons.scss */
 span.icons24, span.icons16, span.circle20, span.loading, span.loading16, span.errorFigures {
   display: inline-block;
 }
 
 /* 24px icons */
-/* line 40, ../sass2/icons.scss */
+/* line 40, ../sass/icons.scss */
 .icons24.handle {
   width: 22px;
   height: 22px;
 }
 
-/* line 45, ../sass2/icons.scss */
+/* line 45, ../sass/icons.scss */
 .styled-select .icons24.handle {
   background-position: -26px 0;
   pointer-events: none;
 }
 
-/* line 50, ../sass2/icons.scss */
+/* line 50, ../sass/icons.scss */
 .styled-time .icons24.handle {
   background-position: 0 0;
 }
 
-/* line 54, ../sass2/icons.scss */
+/* line 54, ../sass/icons.scss */
 .styled-date-range .icons24.handle {
   background-position: -52px 0;
 }
 
-/* line 58, ../sass2/icons.scss */
+/* line 58, ../sass/icons.scss */
 .styled-lookup .icons24.handle {
   background-position: -78px 0;
 }
 
-/* line 62, ../sass2/icons.scss */
+/* line 62, ../sass/icons.scss */
 .icons24.inlineHelp-gray {
   background-position: -130px 0;
 }
 
-/* line 66, ../sass2/icons.scss */
+/* line 66, ../sass/icons.scss */
 .icons24.inlineHelp-green {
   background-position: -156px 0;
 }
 
-/* line 70, ../sass2/icons.scss */
+/* line 70, ../sass/icons.scss */
 .icons24.visibility-gray {
   background-position: -234px 0;
 }
 
-/* line 74, ../sass2/icons.scss */
+/* line 74, ../sass/icons.scss */
 .icons24.advancedSearch-purple {
   background-position: 0 -26px;
 }
 
-/* line 78, ../sass2/icons.scss */
+/* line 78, ../sass/icons.scss */
 .icons24.help-gray {
   background-position: -26px -26px;
 }
 
-/* line 82, ../sass2/icons.scss */
+/* line 82, ../sass/icons.scss */
 .icons24.dateRange-purple {
   background-position: -52px -26px;
 }
 
-/* line 86, ../sass2/icons.scss */
+/* line 86, ../sass/icons.scss */
 .icons24.addDash-purple {
   background-position: -78px -26px;
 }
 
-/* line 90, ../sass2/icons.scss */
+/* line 90, ../sass/icons.scss */
 .icons24.sdt-blue {
   background-position: -104px -26px;
 }
 
-/* line 94, ../sass2/icons.scss */
+/* line 94, ../sass/icons.scss */
 .icons24.sdt-purple {
   background-position: -130px -26px;
 }
 
-/* line 98, ../sass2/icons.scss */
+/* line 98, ../sass/icons.scss */
 .icons24.sdt-gray {
   background-position: -364px -26px;
 }
 
-/* line 102, ../sass2/icons.scss */
+/* line 102, ../sass/icons.scss */
 .icons24.services-purple {
   background-position: 0 -52px;
 }
 
-/* line 106, ../sass2/icons.scss */
+/* line 106, ../sass/icons.scss */
 .icons24.services-white {
   background-position: -26px -52px;
 }
 
-/* line 110, ../sass2/icons.scss */
+/* line 110, ../sass/icons.scss */
 .icons24.services-gray {
   background-position: -52px -52px;
 }
 
-/* line 114, ../sass2/icons.scss */
+/* line 114, ../sass/icons.scss */
 .icons24.services-blue {
   background-position: -78px -52px;
 }
 
-/* line 118, ../sass2/icons.scss */
+/* line 118, ../sass/icons.scss */
 .icons24.dash-purple {
   background-position: -104px -52px;
 }
 
-/* line 122, ../sass2/icons.scss */
+/* line 122, ../sass/icons.scss */
 .icons24.dash-white {
   background-position: -130px -52px;
 }
 
-/* line 126, ../sass2/icons.scss */
+/* line 126, ../sass/icons.scss */
 .icons24.dash-gray {
   background-position: -156px -52px;
 }
 
-/* line 130, ../sass2/icons.scss */
+/* line 130, ../sass/icons.scss */
 .icons24.dash-blue {
   background-position: -182px -52px;
 }
 
-/* line 134, ../sass2/icons.scss */
+/* line 134, ../sass/icons.scss */
 .icons24.hosts-purple {
   background-position: -208px -52px;
 }
 
-/* line 138, ../sass2/icons.scss */
+/* line 138, ../sass/icons.scss */
 .icons24.hosts-white {
   background-position: -234px -52px;
 }
 
-/* line 142, ../sass2/icons.scss */
+/* line 142, ../sass/icons.scss */
 .icons24.hosts-gray {
   background-position: -260px -52px;
 }
 
-/* line 146, ../sass2/icons.scss */
+/* line 146, ../sass/icons.scss */
 .icons24.hosts-blue {
   background-position: -286px -52px;
 }
 
-/* line 150, ../sass2/icons.scss */
+/* line 150, ../sass/icons.scss */
 .icons24.alerts-purple {
   background-position: -312px -52px;
 }
 
-/* line 154, ../sass2/icons.scss */
+/* line 154, ../sass/icons.scss */
 .icons24.alerts-white {
   background-position: -338px -52px;
 }
 
-/* line 158, ../sass2/icons.scss */
+/* line 158, ../sass/icons.scss */
 .icons24.alerts-gray {
   background-position: -364px -52px;
 }
 
-/* line 162, ../sass2/icons.scss */
+/* line 162, ../sass/icons.scss */
 .icons24.alerts-blue {
   background-position: -390px -52px;
 }
 
-/* line 166, ../sass2/icons.scss */
+/* line 166, ../sass/icons.scss */
 .icons24.report-purple {
   background-position: 0 -78px;
 }
 
-/* line 170, ../sass2/icons.scss */
+/* line 170, ../sass/icons.scss */
 .icons24.report-white {
   background-position: -26px -78px;
 }
 
-/* line 174, ../sass2/icons.scss */
+/* line 174, ../sass/icons.scss */
 .icons24.report-gray {
   background-position: -52px -78px;
 }
 
-/* line 178, ../sass2/icons.scss */
+/* line 178, ../sass/icons.scss */
 .icons24.report-blue {
   background-position: -78px -78px;
 }
 
-/* line 182, ../sass2/icons.scss */
+/* line 182, ../sass/icons.scss */
 .icons24.settings-purple {
   background-position: -104px -78px;
 }
 
-/* line 186, ../sass2/icons.scss */
+/* line 186, ../sass/icons.scss */
 .icons24.settings-white {
   background-position: -130px -78px;
 }
 
-/* line 190, ../sass2/icons.scss */
+/* line 190, ../sass/icons.scss */
 .icons24.settings-gray {
   background-position: -156px -78px;
 }
 
-/* line 194, ../sass2/icons.scss */
+/* line 194, ../sass/icons.scss */
 .icons24.settings-blue {
   background-position: -182px -78px;
 }
 
-/* line 198, ../sass2/icons.scss */
+/* line 198, ../sass/icons.scss */
 .icons24.serviceGroup-gray {
   background-position: -208px -78px;
   width: 32px;
 }
 
-/* line 203, ../sass2/icons.scss */
+/* line 203, ../sass/icons.scss */
 .icons24.alertsCritical {
   background-position: 0px -104px;
 }
 
-/* line 207, ../sass2/icons.scss */
+/* line 207, ../sass/icons.scss */
 .icons24.alertsError {
   background-position: -26px -104px;
 }
 
-/* line 211, ../sass2/icons.scss */
+/* line 211, ../sass/icons.scss */
 .icons24.alertsWarning {
   background-position: -52px -104px;
 }
 
-/* line 215, ../sass2/icons.scss */
+/* line 215, ../sass/icons.scss */
 .icons24.alertsDisabled {
   background-position: -78px -104px;
 }
 
-/* line 219, ../sass2/icons.scss */
+/* line 219, ../sass/icons.scss */
 .icons24.alertsCritical-ack {
   background-position: -104px -104px;
 }
 
-/* line 223, ../sass2/icons.scss */
+/* line 223, ../sass/icons.scss */
 .icons24.alertsError-ack {
   background-position: -130px -104px;
 }
 
-/* line 227, ../sass2/icons.scss */
+/* line 227, ../sass/icons.scss */
 .icons24.alertsWarning-ack {
   background-position: -156px -104px;
 }
 
-/* line 231, ../sass2/icons.scss */
+/* line 231, ../sass/icons.scss */
 .icons24.alertsCriticalSDT {
   background-position: -182px -104px;
 }
 
-/* line 235, ../sass2/icons.scss */
+/* line 235, ../sass/icons.scss */
 .icons24.alertsErrorSDT {
   background-position: -208px -104px;
 }
 
-/* line 239, ../sass2/icons.scss */
+/* line 239, ../sass/icons.scss */
 .icons24.alertsWarningSDT {
   background-position: -234px -104px;
 }
 
-/* line 243, ../sass2/icons.scss */
+/* line 243, ../sass/icons.scss */
 .icons24.alertsCriticalSDT-ack {
   background-position: -260px -104px;
 }
 
-/* line 247, ../sass2/icons.scss */
+/* line 247, ../sass/icons.scss */
 .icons24.alertsErrorSDT-ack {
   background-position: -286px -104px;
 }
 
-/* line 251, ../sass2/icons.scss */
+/* line 251, ../sass/icons.scss */
 .icons24.alertsWarningSDT-ack {
   background-position: -312px -104px;
 }
 
-/* line 255, ../sass2/icons.scss */
+/* line 255, ../sass/icons.scss */
 .icons24.alertsCleared {
   background-position: -338px -104px;
 }
 
-/* line 259, ../sass2/icons.scss */
+/* line 259, ../sass/icons.scss */
 .icons24.alertsCritical-down {
   background-position: 0px -130px;
 }
 
-/* line 263, ../sass2/icons.scss */
+/* line 263, ../sass/icons.scss */
 .icons24.alertsCritical-up {
   background-position: -26px -130px;
 }
 
-/* line 267, ../sass2/icons.scss */
+/* line 267, ../sass/icons.scss */
 .icons24.alertsError-down {
   background-position: -52px -130px;
 }
 
-/* line 271, ../sass2/icons.scss */
+/* line 271, ../sass/icons.scss */
 .icons24.alertsError-up {
   background-position: -78px -130px;
 }
 
-/* line 275, ../sass2/icons.scss */
+/* line 275, ../sass/icons.scss */
 .icons24.alertsWarning-down {
   background-position: -104px -130px;
 }
 
-/* line 279, ../sass2/icons.scss */
+/* line 279, ../sass/icons.scss */
 .icons24.alertsWarning-up {
   background-position: -130px -130px;
 }
 
-/* line 283, ../sass2/icons.scss */
+/* line 283, ../sass/icons.scss */
 .icons24.alertsDisabled-down {
   background-position: -156px -130px;
 }
 
-/* line 287, ../sass2/icons.scss */
+/* line 287, ../sass/icons.scss */
 .icons24.alertsDisabled-up {
   background-position: -182px -130px;
 }
 
-/* line 291, ../sass2/icons.scss */
+/* line 291, ../sass/icons.scss */
 .icons24.alertsCritical-ack-down {
   background-position: -208px -130px;
 }
 
-/* line 295, ../sass2/icons.scss */
+/* line 295, ../sass/icons.scss */
 .icons24.alertsCritical-ack-up {
   background-position: -234px -130px;
 }
 
-/* line 299, ../sass2/icons.scss */
+/* line 299, ../sass/icons.scss */
 .icons24.alertsError-ack-down {
   background-position: -260px -130px;
 }
 
-/* line 303, ../sass2/icons.scss */
+/* line 303, ../sass/icons.scss */
 .icons24.alertsError-ack-up {
   background-position: -286px -130px;
 }
 
-/* line 307, ../sass2/icons.scss */
+/* line 307, ../sass/icons.scss */
 .icons24.alertsWarning-ack-down {
   background-position: -312px -130px;
 }
 
-/* line 311, ../sass2/icons.scss */
+/* line 311, ../sass/icons.scss */
 .icons24.alertsWarning-ack-up {
   background-position: -338px -130px;
 }
 
-/* line 315, ../sass2/icons.scss */
+/* line 315, ../sass/icons.scss */
 .icons24.alertsCriticalSDT-down {
   background-position: -364px -130px;
 }
 
-/* line 319, ../sass2/icons.scss */
+/* line 319, ../sass/icons.scss */
 .icons24.alertsCriticalSDT-up {
   background-position: -390px -130px;
 }
 
-/* line 323, ../sass2/icons.scss */
+/* line 323, ../sass/icons.scss */
 .icons24.alertsErrorSDT-down {
   background-position: 0px -156px;
 }
 
-/* line 327, ../sass2/icons.scss */
+/* line 327, ../sass/icons.scss */
 .icons24.alertsErrorSDT-up {
   background-position: -26px -156px;
 }
 
-/* line 331, ../sass2/icons.scss */
+/* line 331, ../sass/icons.scss */
 .icons24.alertsWarningSDT-down {
   background-position: -52px -156px;
 }
 
-/* line 335, ../sass2/icons.scss */
+/* line 335, ../sass/icons.scss */
 .icons24.alertsWarningSDT-up {
   background-position: -78px -156px;
 }
 
-/* line 339, ../sass2/icons.scss */
+/* line 339, ../sass/icons.scss */
 .icons24.alertsCriticalSDT-ack-down {
   background-position: -104px -156px;
 }
 
-/* line 343, ../sass2/icons.scss */
+/* line 343, ../sass/icons.scss */
 .icons24.alertsCriticalSDT-ack-up {
   background-position: -130px -156px;
 }
 
-/* line 347, ../sass2/icons.scss */
+/* line 347, ../sass/icons.scss */
 .icons24.alertsErrorSDT-ack-down {
   background-position: -156px -156px;
 }
 
-/* line 351, ../sass2/icons.scss */
+/* line 351, ../sass/icons.scss */
 .icons24.alertsErrorSDT-ack-up {
   background-position: -182px -156px;
 }
 
-/* line 355, ../sass2/icons.scss */
+/* line 355, ../sass/icons.scss */
 .icons24.alertsWarningSDT-ack-down {
   background-position: -208px -156px;
 }
 
-/* line 359, ../sass2/icons.scss */
+/* line 359, ../sass/icons.scss */
 .icons24.alertsWarningSDT-ack-up {
   background-position: -234px -156px;
 }
 
-/* line 363, ../sass2/icons.scss */
+/* line 363, ../sass/icons.scss */
 .icons24.alertsCleared-down {
   background-position: -260px -156px;
 }
 
-/* line 367, ../sass2/icons.scss */
+/* line 367, ../sass/icons.scss */
 .icons24.alertsCleared-up {
   background-position: -286px -156px;
 }
 
-/* line 371, ../sass2/icons.scss */
+/* line 371, ../sass/icons.scss */
 .icons24.alertsColumnHead-desc {
   background-position: -314px -156px;
 }
 
-/* line 375, ../sass2/icons.scss */
+/* line 375, ../sass/icons.scss */
 .icons24.alertsColumnHead-asc {
   background-position: -340px -156px;
 }
 
-/* line 379, ../sass2/icons.scss */
+/* line 379, ../sass/icons.scss */
 .icons24.dragNDrop {
   background-position: -156px -26px;
 }
 
-/* line 383, ../sass2/icons.scss */
+/* line 383, ../sass/icons.scss */
 .icons24.aloneSDT {
   background-position: -364px -104px;
 }
 
-/* line 387, ../sass2/icons.scss */
+/* line 387, ../sass/icons.scss */
 .icons24.aloneSDTGray {
   background-position: -390px -104px;
 }
 
-/* line 391, ../sass2/icons.scss */
+/* line 391, ../sass/icons.scss */
 .icons24.aloneSDT-down {
   background-position: -364px -156px;
 }
 
-/* line 395, ../sass2/icons.scss */
+/* line 395, ../sass/icons.scss */
 .icons24.aloneSDT-up {
   background-position: -390px -156px;
 }
 
-/* line 399, ../sass2/icons.scss */
+/* line 399, ../sass/icons.scss */
 .icons24.folderGroup {
   background-position: -260px 0;
 }
 
-/* line 403, ../sass2/icons.scss */
+/* line 403, ../sass/icons.scss */
 .icons24.downBlack {
   background-position: -208px 0;
 }
 
-/* line 407, ../sass2/icons.scss */
+/* line 407, ../sass/icons.scss */
 .icons24.circleCheckmarkWhite {
   background-position: -182px 0;
 }
 
-/* line 411, ../sass2/icons.scss */
+/* line 411, ../sass/icons.scss */
 .icons24.circleXWhite {
   background-position: -286px 0;
 }
 
-/* line 415, ../sass2/icons.scss */
+/* line 415, ../sass/icons.scss */
 .icons24.circleCheckmarkGray {
   background-position: -312px 0;
 }
 
-/* line 419, ../sass2/icons.scss */
+/* line 419, ../sass/icons.scss */
 .icons24.circleXGray {
   background-position: -338px 0;
 }
 
-/* line 423, ../sass2/icons.scss */
+/* line 423, ../sass/icons.scss */
 .icons24.downArrowWhite {
   background-position: -364px 0;
 }
 
-/* line 427, ../sass2/icons.scss */
+/* line 427, ../sass/icons.scss */
 .icons24.downArrowGray {
   background-position: -390px 0;
 }
 
-/* line 431, ../sass2/icons.scss */
+/* line 431, ../sass/icons.scss */
 .icons24.folderGroupLarge {
   background-position: -182px -26px;
 }
 
-/* line 435, ../sass2/icons.scss */
+/* line 435, ../sass/icons.scss */
 .icons24.iconGraphWhite {
   background-position: -208px -26px;
 }
 
-/* line 439, ../sass2/icons.scss */
+/* line 439, ../sass/icons.scss */
 .icons24.iconGraphGray {
   background-position: -234px -26px;
 }
 
-/* line 443, ../sass2/icons.scss */
+/* line 443, ../sass/icons.scss */
 .icons24.iconGraphBlue {
   background-position: -260px -26px;
 }
 
-/* line 447, ../sass2/icons.scss */
+/* line 447, ../sass/icons.scss */
 .icons24.alertClusterWhite {
   background-position: -286px -26px;
 }
 
-/* line 451, ../sass2/icons.scss */
+/* line 451, ../sass/icons.scss */
 .icons24.alertClusterGray {
   background-position: -312px -26px;
 }
 
-/* line 455, ../sass2/icons.scss */
+/* line 455, ../sass/icons.scss */
 .icons24.alertClusterBlue {
   background-position: -338px -26px;
 }
 
-/* line 459, ../sass2/icons.scss */
+/* line 459, ../sass/icons.scss */
 .icons24.datasourceGray {
   background-position: 0px -182px;
 }
 
-/* line 463, ../sass2/icons.scss */
+/* line 463, ../sass/icons.scss */
 .icons24.datasourceWhite {
   background-position: -26px -182px;
 }
 
-/* line 467, ../sass2/icons.scss */
+/* line 467, ../sass/icons.scss */
 .icons24.datasourceGroupGray {
   background-position: -52px -182px;
 }
 
-/* line 471, ../sass2/icons.scss */
+/* line 471, ../sass/icons.scss */
 .icons24.datasourceGroupWhite {
   background-position: -78px -182px;
 }
 
-/* line 475, ../sass2/icons.scss */
+/* line 475, ../sass/icons.scss */
 .icons24.instanceGray {
   background-position: -104px -182px;
 }
 
-/* line 479, ../sass2/icons.scss */
+/* line 479, ../sass/icons.scss */
 .icons24.instanceWhite {
   background-position: -130px -182px;
 }
 
-/* line 483, ../sass2/icons.scss */
+/* line 483, ../sass/icons.scss */
 .icons24.instanceGroupGray {
   background-position: -156px -182px;
 }
 
-/* line 487, ../sass2/icons.scss */
+/* line 487, ../sass/icons.scss */
 .icons24.instanceGroupWhite {
   background-position: -182px -182px;
 }
 
-/* line 491, ../sass2/icons.scss */
+/* line 491, ../sass/icons.scss */
 .icons24.datapointGray {
   background-position: -208px -182px;
 }
 
-/* line 495, ../sass2/icons.scss */
+/* line 495, ../sass/icons.scss */
 .icons24.datapointWhite {
   background-position: -234px -182px;
 }
 
-/* line 499, ../sass2/icons.scss */
+/* line 499, ../sass/icons.scss */
 .icons24.datapointGroupGray {
   background-position: -260px -182px;
 }
 
-/* line 503, ../sass2/icons.scss */
+/* line 503, ../sass/icons.scss */
 .icons24.datapointGroupWhite {
   background-position: -286px -182px;
 }
 
-/* line 507, ../sass2/icons.scss */
+/* line 507, ../sass/icons.scss */
 .icons24.datapointBlue {
   background-position: -314px -182px;
 }
 
-/* line 511, ../sass2/icons.scss */
+/* line 511, ../sass/icons.scss */
 .icons24.netscanGray {
   background-position: -286px -78px;
 }
 
-/* line 515, ../sass2/icons.scss */
+/* line 515, ../sass/icons.scss */
 .icons24.netscanWhite {
   background-position: -260px -78px;
 }
 
-/* line 519, ../sass2/icons.scss */
+/* line 519, ../sass/icons.scss */
 .icons24.platformWindowsGray {
   background-position: -338px -78px;
 }
 
-/* line 523, ../sass2/icons.scss */
+/* line 523, ../sass/icons.scss */
 .icons24.platformWindowsWhite {
   background-position: -312px -78px;
 }
 
-/* line 527, ../sass2/icons.scss */
+/* line 527, ../sass/icons.scss */
 .icons24.platformLinuxGray {
   background-position: -390px -78px;
 }
 
-/* line 531, ../sass2/icons.scss */
+/* line 531, ../sass/icons.scss */
 .icons24.platformLinuxWhite {
   background-position: -364px -78px;
 }
 
-/* line 535, ../sass2/icons.scss */
+/* line 535, ../sass/icons.scss */
 .icons24.logWhite {
   background-position: 0px -208px;
 }
 
-/* line 539, ../sass2/icons.scss */
+/* line 539, ../sass/icons.scss */
 .icons24.logGray {
   background-position: -26px -208px;
 }
 
-/* line 543, ../sass2/icons.scss */
+/* line 543, ../sass/icons.scss */
 .icons24.upArrowWhite {
   background-position: -390px -26px;
 }
 
-/* line 547, ../sass2/icons.scss */
+/* line 547, ../sass/icons.scss */
 .icons24.arrowFlipPurple {
   background-position: -52px -208px;
 }
 
-/* line 551, ../sass2/icons.scss */
+/* line 551, ../sass/icons.scss */
 .icons24.arrowFlipWhite {
   background-position: -78px -208px;
 }
 
-/* line 555, ../sass2/icons.scss */
+/* line 555, ../sass/icons.scss */
 .icons24.emailGray {
   background-position: -104px -208px;
 }
 
-/* line 559, ../sass2/icons.scss */
+/* line 559, ../sass/icons.scss */
 .icons24.emailWhite {
   background-position: -130px -208px;
 }
 
-/* line 563, ../sass2/icons.scss */
+/* line 563, ../sass/icons.scss */
 .icons24.SMSGray {
   background-position: -156px -208px;
 }
 
-/* line 567, ../sass2/icons.scss */
+/* line 567, ../sass/icons.scss */
 .icons24.SMSWhite {
   background-position: -182px -208px;
 }
 
-/* line 571, ../sass2/icons.scss */
+/* line 571, ../sass/icons.scss */
 .icons24.phoneGray {
   background-position: -208px -208px;
 }
 
-/* line 575, ../sass2/icons.scss */
+/* line 575, ../sass/icons.scss */
 .icons24.phoneWhite {
   background-position: -234px -208px;
 }
 
-/* line 579, ../sass2/icons.scss */
+/* line 579, ../sass/icons.scss */
 .icons24.collectorGray {
   background-position: -338px -182px;
 }
 
-/* line 583, ../sass2/icons.scss */
+/* line 583, ../sass/icons.scss */
 .icons24.collectorWhite {
   background-position: -364px -182px;
 }
 
-/* line 587, ../sass2/icons.scss */
+/* line 587, ../sass/icons.scss */
 .icons24.collectorPurple {
   background-position: -390px -182px;
 }
 
-/* line 591, ../sass2/icons.scss */
+/* line 591, ../sass/icons.scss */
 .icons24.clouddeviceGray {
   background-position: -260px -208px;
 }
 
-/* line 595, ../sass2/icons.scss */
+/* line 595, ../sass/icons.scss */
 .icons24.clouddeviceWhite {
   background-position: -286px -208px;
 }
 
-/* line 599, ../sass2/icons.scss */
+/* line 599, ../sass/icons.scss */
 .icons24.clouddevicePurple {
   background-position: -312px -208px;
 }
 
-/* line 603, ../sass2/icons.scss */
+/* line 603, ../sass/icons.scss */
 .icons24.boldBlack {
   background-position: 0px -234px;
 }
 
-/* line 607, ../sass2/icons.scss */
+/* line 607, ../sass/icons.scss */
 .icons24.italicBlack {
   background-position: -26px -234px;
 }
 
-/* line 611, ../sass2/icons.scss */
+/* line 611, ../sass/icons.scss */
 .icons24.unorderedlistBlack {
   background-position: -52px -234px;
 }
 
-/* line 615, ../sass2/icons.scss */
+/* line 615, ../sass/icons.scss */
 .icons24.orderedlistBlack {
   background-position: -78px -234px;
 }
 
-/* line 619, ../sass2/icons.scss */
+/* line 619, ../sass/icons.scss */
 .icons24.linkBlack {
   background-position: -104px -234px;
 }
 
-/* line 623, ../sass2/icons.scss */
+/* line 623, ../sass/icons.scss */
 .icons24.H1Black {
   background-position: -130px -234px;
 }
 
-/* line 627, ../sass2/icons.scss */
+/* line 627, ../sass/icons.scss */
 .icons24.H2Black {
   background-position: -156px -234px;
 }
 
-/* line 631, ../sass2/icons.scss */
+/* line 631, ../sass/icons.scss */
 .icons24.imageBlack {
   background-position: -182px -234px;
 }
 
-/* line 635, ../sass2/icons.scss */
+/* line 635, ../sass/icons.scss */
 .icons24.showHTMLBlack {
   background-position: -208px -234px;
 }
 
-/* line 639, ../sass2/icons.scss */
+/* line 639, ../sass/icons.scss */
 .icons24.colorBlack {
   background-position: -234px -234px;
 }
 
 /* 16px icons */
-/* line 644, ../sass2/icons.scss */
+/* line 644, ../sass/icons.scss */
 .icons16.graph-blue {
   background-position: 0 0;
   width: 27px;
 }
 
-/* line 649, ../sass2/icons.scss */
+/* line 649, ../sass/icons.scss */
 .icons16.table-blue {
   background-position: -36px 0;
 }
 
-/* line 653, ../sass2/icons.scss */
+/* line 653, ../sass/icons.scss */
 .icons16.clone-gray {
   background-position: -54px 0;
 }
 
-/* line 657, ../sass2/icons.scss */
+/* line 657, ../sass/icons.scss */
 .icons16.clone-purple {
   background-position: -216px 0;
 }
 
-/* line 661, ../sass2/icons.scss */
+/* line 661, ../sass/icons.scss */
 .icons16.edit-purple {
   background-position: -72px 0;
 }
 
-/* line 665, ../sass2/icons.scss */
+/* line 665, ../sass/icons.scss */
 .icons16.delete-purple {
   background-position: -90px 0;
 }
 
-/* line 669, ../sass2/icons.scss */
+/* line 669, ../sass/icons.scss */
 .icons16.delete-gray {
   background-position: -252px 0;
 }
 
-/* line 673, ../sass2/icons.scss */
+/* line 673, ../sass/icons.scss */
 .icons16.delete-white {
   background-position: -270px 0;
 }
 
-/* line 677, ../sass2/icons.scss */
+/* line 677, ../sass/icons.scss */
 .icons16.date-gray-small {
   background-position: -108px 0;
 }
 
-/* line 681, ../sass2/icons.scss */
+/* line 681, ../sass/icons.scss */
 .icons16.date-white-small {
   background-position: -90px -72px;
 }
 
-/* line 685, ../sass2/icons.scss */
+/* line 685, ../sass/icons.scss */
 .icons16.closeDialog-gray {
   background-position: -126px 0;
 }
 
-/* line 689, ../sass2/icons.scss */
+/* line 689, ../sass/icons.scss */
 .icons16.dragVertical-gray {
   background-position: -144px 0;
 }
 
-/* line 693, ../sass2/icons.scss */
+/* line 693, ../sass/icons.scss */
 .icons16.check-white-small {
   background-position: -162px 0;
 }
 
-/* line 697, ../sass2/icons.scss */
+/* line 697, ../sass/icons.scss */
 .icons16.tableSettings-gray {
   background-position: -180px 0;
 }
 
-/* line 701, ../sass2/icons.scss */
+/* line 701, ../sass/icons.scss */
 .icons16.search-gray {
   background-position: -198px 0;
 }
 
-/* line 705, ../sass2/icons.scss */
+/* line 705, ../sass/icons.scss */
 .icons16.sdt-white {
   background-position: 0 -18px;
 }
 
-/* line 709, ../sass2/icons.scss */
+/* line 709, ../sass/icons.scss */
 .icons16.sdt-red {
   background-position: -18px -18px;
 }
 
-/* line 713, ../sass2/icons.scss */
+/* line 713, ../sass/icons.scss */
 .icons16.sdt-blue {
   background-position: -36px -18px;
 }
 
-/* line 717, ../sass2/icons.scss */
+/* line 717, ../sass/icons.scss */
 .icons16.sdt-gray {
   background-position: -54px -18px;
 }
 
-/* line 721, ../sass2/icons.scss */
+/* line 721, ../sass/icons.scss */
 .icons16.alert-acked {
   background-position: -72px -18px;
 }
 
-/* line 725, ../sass2/icons.scss */
+/* line 725, ../sass/icons.scss */
 .icons16.alert-red {
   background-position: -90px -18px;
 }
 
-/* line 729, ../sass2/icons.scss */
+/* line 729, ../sass/icons.scss */
 .icons16.alert-gray {
   background-position: -108px -18px;
 }
 
-/* line 733, ../sass2/icons.scss */
+/* line 733, ../sass/icons.scss */
 .icons16.alert-blue {
   background-position: -252px -36px;
 }
 
-/* line 737, ../sass2/icons.scss */
+/* line 737, ../sass/icons.scss */
 .icons16.services-gray {
   background-position: -126px -18px;
 }
 
-/* line 741, ../sass2/icons.scss */
+/* line 741, ../sass/icons.scss */
 .icons16.download-gray {
   background-position: -72px -90px;
   width: 26px;
 }
 
-/* line 746, ../sass2/icons.scss */
+/* line 746, ../sass/icons.scss */
 .icons16.download-white {
   background-position: -144px -18px;
   width: 26px;
 }
 
-/* line 751, ../sass2/icons.scss */
+/* line 751, ../sass/icons.scss */
 .icons16.upload-gray {
   background-position: -72px -18px;
   width: 26px;
 }
 
-/* line 756, ../sass2/icons.scss */
+/* line 756, ../sass/icons.scss */
 .icons16.upload-white {
   background-position: -36px -90px;
   width: 26px;
 }
 
-/* line 761, ../sass2/icons.scss */
+/* line 761, ../sass/icons.scss */
 .icons16.goTo-gray {
   background-position: -180px -18px;
 }
 
-/* line 765, ../sass2/icons.scss */
+/* line 765, ../sass/icons.scss */
 .icons16.goTo-purple {
   background-position: -198px -18px;
 }
 
-/* line 769, ../sass2/icons.scss */
+/* line 769, ../sass/icons.scss */
 .icons16.goTo-white {
   background-position: -216px -18px;
 }
 
-/* line 773, ../sass2/icons.scss */
+/* line 773, ../sass/icons.scss */
 .icons16.visibility-gray {
   background-position: -234px -18px;
 }
 
-/* line 777, ../sass2/icons.scss */
+/* line 777, ../sass/icons.scss */
 .icons16.addToDash-purple {
   background-position: -252px -18px;
 }
 
-/* line 781, ../sass2/icons.scss */
+/* line 781, ../sass/icons.scss */
 .icons16.dashboards-gray {
   background-position: -270px -18px;
 }
 
-/* line 785, ../sass2/icons.scss */
+/* line 785, ../sass/icons.scss */
 .icons16.zoom-ltPurple {
   background-position: 0 -36px;
 }
 
-/* line 789, ../sass2/icons.scss */
+/* line 789, ../sass/icons.scss */
 .icons16.config-ltPurple {
   background-position: -18px -36px;
 }
 
-/* line 793, ../sass2/icons.scss */
+/* line 793, ../sass/icons.scss */
 .icons16.zoom-purple {
   background-position: -36px -36px;
 }
 
-/* line 797, ../sass2/icons.scss */
+/* line 797, ../sass/icons.scss */
 .icons16.config-purple {
   background-position: -54px -36px;
 }
 
-/* line 801, ../sass2/icons.scss */
+/* line 801, ../sass/icons.scss */
 .icons16.zoom-ltBlue {
   background-position: -72px -36px;
 }
 
-/* line 805, ../sass2/icons.scss */
+/* line 805, ../sass/icons.scss */
 .icons16.config-ltBlue {
   background-position: -90px -36px;
 }
 
-/* line 809, ../sass2/icons.scss */
+/* line 809, ../sass/icons.scss */
 .icons16.zoom-blue {
   background-position: -108px -36px;
 }
 
-/* line 813, ../sass2/icons.scss */
+/* line 813, ../sass/icons.scss */
 .icons16.config-blue {
   background-position: -126px -36px;
 }
 
-/* line 817, ../sass2/icons.scss */
+/* line 817, ../sass/icons.scss */
 .icons16.zoom-gray {
   background-position: -144px -36px;
 }
 
-/* line 821, ../sass2/icons.scss */
+/* line 821, ../sass/icons.scss */
 .icons16.config-gray {
   background-position: -162px -36px;
 }
 
-/* line 825, ../sass2/icons.scss */
+/* line 825, ../sass/icons.scss */
 .icons16.zoom-ltGray {
   background-position: -180px -36px;
 }
 
-/* line 829, ../sass2/icons.scss */
+/* line 829, ../sass/icons.scss */
 .icons16.config-ltGray {
   background-position: -198px -36px;
 }
 
-/* line 833, ../sass2/icons.scss */
+/* line 833, ../sass/icons.scss */
 .icons16.config-dkBlue {
   background-position: -216px -36px;
 }
 
-/* line 837, ../sass2/icons.scss */
+/* line 837, ../sass/icons.scss */
 .icons16.config-white {
   background-position: -234px -36px;
 }
 
-/* line 841, ../sass2/icons.scss */
+/* line 841, ../sass/icons.scss */
 .icons16.expand-left {
   background-position: 0 -54px;
 }
 
-/* line 845, ../sass2/icons.scss */
+/* line 845, ../sass/icons.scss */
 .icons16.expand-right {
   background-position: -18px -54px;
 }
 
-/* line 849, ../sass2/icons.scss */
+/* line 849, ../sass/icons.scss */
 .icons16.expand-up {
   background-position: -36px -54px;
 }
 
-/* line 853, ../sass2/icons.scss */
+/* line 853, ../sass/icons.scss */
 .icons16.expand-down {
   background-position: -54px -54px;
 }
 
-/* line 857, ../sass2/icons.scss */
+/* line 857, ../sass/icons.scss */
 .icons16.page-right {
   background-position: -72px -54px;
   width: 26px;
   height: 12px;
 }
 
-/* line 863, ../sass2/icons.scss */
+/* line 863, ../sass/icons.scss */
 .icons16.page-left {
   background-position: -108px -54px;
   width: 26px;
   height: 12px;
 }
 
-/* line 869, ../sass2/icons.scss */
+/* line 869, ../sass/icons.scss */
 .icons16.sectionArrow-purple {
   background-position: -144px -54px;
   width: 28px;
 }
 
-/* line 874, ../sass2/icons.scss */
+/* line 874, ../sass/icons.scss */
 .icons16.sectionArrow-blue {
   background-position: -180px -54px;
   width: 28px;
 }
 
-/* line 879, ../sass2/icons.scss */
+/* line 879, ../sass/icons.scss */
 .icons16.slideshow-blue {
   background-position: -216px -54px;
 }
 
-/* line 883, ../sass2/icons.scss */
+/* line 883, ../sass/icons.scss */
 .icons16.slideshow-gray {
   background-position: -234px -54px;
 }
 
-/* line 887, ../sass2/icons.scss */
+/* line 887, ../sass/icons.scss */
 .icons16.slideshow-white {
   background-position: -216px -72px;
 }
 
-/* line 891, ../sass2/icons.scss */
+/* line 891, ../sass/icons.scss */
 .icons16.slideshowStop-blue {
   background-position: -252px -54px;
 }
 
-/* line 895, ../sass2/icons.scss */
+/* line 895, ../sass/icons.scss */
 .icons16.slideshowStop-gray {
   background-position: -252px -72px;
 }
 
-/* line 899, ../sass2/icons.scss */
+/* line 899, ../sass/icons.scss */
 .icons16.slideshowStop-white {
   background-position: -234px -72px;
 }
 
-/* line 903, ../sass2/icons.scss */
+/* line 903, ../sass/icons.scss */
 .icons16.fullScreen-gray {
   background-position: -270px -54px;
 }
 
-/* line 907, ../sass2/icons.scss */
+/* line 907, ../sass/icons.scss */
 .icons16.fullScreenClose-gray {
   background-position: -270px -72px;
 }
 
-/* line 911, ../sass2/icons.scss */
+/* line 911, ../sass/icons.scss */
 .icons16.fullScreen-white {
   background-position: -270px -90px;
 }
 
-/* line 915, ../sass2/icons.scss */
+/* line 915, ../sass/icons.scss */
 .icons16.fullScreenClose-white {
   background-position: -270px -108px;
 }
 
-/* line 919, ../sass2/icons.scss */
+/* line 919, ../sass/icons.scss */
 .icons16.dead-black {
   background-position: -0px -72px;
 }
 
-/* line 923, ../sass2/icons.scss */
+/* line 923, ../sass/icons.scss */
 .icons16.collectorUnreachable-gray {
   background-position: -18px -72px;
 }
 
-/* line 927, ../sass2/icons.scss */
+/* line 927, ../sass/icons.scss */
 .icons16.opsNote-gray {
   background-position: -36px -72px;
 }
 
-/* line 931, ../sass2/icons.scss */
+/* line 931, ../sass/icons.scss */
 .icons16.opsNote-purple {
   background-position: -126px -72px;
 }
 
-/* line 935, ../sass2/icons.scss */
+/* line 935, ../sass/icons.scss */
 .icons16.opsNote-white {
   background-position: -54px -72px;
 }
 
-/* line 939, ../sass2/icons.scss */
+/* line 939, ../sass/icons.scss */
 .icons16.check-gray {
   background-position: -72px -72px;
 }
 
-/* line 943, ../sass2/icons.scss */
+/* line 943, ../sass/icons.scss */
 .icons16.check-white-ack {
   background-position: -108px -72px;
 }
 
-/* line 947, ../sass2/icons.scss */
+/* line 947, ../sass/icons.scss */
 .icons16.favoritesStar {
   background-position: -144px -72px;
 }
 
-/* line 951, ../sass2/icons.scss */
+/* line 951, ../sass/icons.scss */
 .icons16.favoritesStar-white {
   background-position: -144px -90px;
 }
 
-/* line 955, ../sass2/icons.scss */
+/* line 955, ../sass/icons.scss */
 .icons16.plusAdd {
   background-position: -180px -72px;
 }
 
-/* line 959, ../sass2/icons.scss */
+/* line 959, ../sass/icons.scss */
 .icons16.plusAdd-gray {
   background-position: -198px -72px;
 }
 
-/* line 963, ../sass2/icons.scss */
+/* line 963, ../sass/icons.scss */
 .icons16.legendOpenClose {
   background-position: -234px 0;
 }
 
-/* line 967, ../sass2/icons.scss */
+/* line 967, ../sass/icons.scss */
 .icons16.homeWhite {
   background-position: -270px -36px;
 }
 
-/* line 971, ../sass2/icons.scss */
+/* line 971, ../sass/icons.scss */
 .icons16.downArrow-white {
   background-position: -162px -72px;
 }
 
-/* line 975, ../sass2/icons.scss */
+/* line 975, ../sass/icons.scss */
 .icons16.roundCancel-white {
   background-position: 0 -90px;
 }
 
-/* line 979, ../sass2/icons.scss */
+/* line 979, ../sass/icons.scss */
 .icons16.roundCancel-gray {
   background-position: -18px -90px;
 }
 
-/* line 983, ../sass2/icons.scss */
+/* line 983, ../sass/icons.scss */
 .icons16.device-gray {
   background-position: -108px -90px;
 }
 
-/* line 987, ../sass2/icons.scss */
+/* line 987, ../sass/icons.scss */
 .icons16.device-white {
   background-position: -126px -90px;
 }
 
-/* line 991, ../sass2/icons.scss */
+/* line 991, ../sass/icons.scss */
 .icons16.log-gray {
   background-position: -162px -90px;
 }
 
-/* line 995, ../sass2/icons.scss */
+/* line 995, ../sass/icons.scss */
 .icons16.log-white {
   background-position: -180px -90px;
 }
 
-/* line 999, ../sass2/icons.scss */
+/* line 999, ../sass/icons.scss */
 .icons16.netscan-gray {
   background-position: -198px -90px;
 }
 
-/* line 1003, ../sass2/icons.scss */
+/* line 1003, ../sass/icons.scss */
 .icons16.netscan-white {
   background-position: -216px -90px;
 }
 
 /* alert status circles */
-/* line 1008, ../sass2/icons.scss */
+/* line 1008, ../sass/icons.scss */
 .circle20 {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
-/* line 1014, ../sass2/icons.scss */
+/* line 1014, ../sass/icons.scss */
 .circle20.multi {
   width: 30px;
   border-radius: 0;
   position: relative;
 }
 
-/* line 1020, ../sass2/icons.scss */
+/* line 1020, ../sass/icons.scss */
 .circle20.multi .circle20 {
   display: block;
   float: left;
 }
 
-/* line 1025, ../sass2/icons.scss */
+/* line 1025, ../sass/icons.scss */
 .circle20.multi .circle20:last-child {
   border: 2px solid white;
   margin-top: -2px;
   margin-left: -14px;
 }
 
-/* line 1031, ../sass2/icons.scss */
+/* line 1031, ../sass/icons.scss */
 .circle20.critical {
   background: #ea262b;
 }
 
-/* line 1035, ../sass2/icons.scss */
+/* line 1035, ../sass/icons.scss */
 .circle20.error {
   background: #fbac2d;
 }
 
-/* line 1039, ../sass2/icons.scss */
+/* line 1039, ../sass/icons.scss */
 .circle20.warning {
   background: #777777;
 }
 
-/* line 1043, ../sass2/icons.scss */
+/* line 1043, ../sass/icons.scss */
 .circle20.acknowledged {
   background: #1d9fcb;
 }
 
-/* line 1047, ../sass2/icons.scss */
+/* line 1047, ../sass/icons.scss */
 .circle20.spacer {
   background: #ffffff;
 }
 
 /* Loading Icons */
-/* line 1052, ../sass2/icons.scss */
+/* line 1052, ../sass/icons.scss */
 .loading {
   display: block;
   width: 32px;
   height: 32px;
 }
 
-/* line 1058, ../sass2/icons.scss */
+/* line 1058, ../sass/icons.scss */
 .loadingGray {
   background: url('../images/icons/loading-gray.gif?1406540845');
 }
 
-/* line 1062, ../sass2/icons.scss */
+/* line 1062, ../sass/icons.scss */
 .loadingWhite-onpurple {
   background: url('../images/icons/loading-white-onpurple.gif?1406540845');
 }
 
-/* line 1066, ../sass2/icons.scss */
+/* line 1066, ../sass/icons.scss */
 .loadingWhite-onblue {
   background: url('../images/icons/loading-white-onblue.gif?1406540845');
 }
 
-/* line 1070, ../sass2/icons.scss */
+/* line 1070, ../sass/icons.scss */
 .loading16 {
   width: 16px;
   height: 16px;
 }
 
-/* line 1075, ../sass2/icons.scss */
+/* line 1075, ../sass/icons.scss */
 .loadingGray16 {
   background: url('../images/icons/loading-gray16.gif?1406540845');
 }
 
-/* line 1079, ../sass2/icons.scss */
+/* line 1079, ../sass/icons.scss */
 .loadingWhite-onpurple16 {
   background: url('../images/icons/loading-white-onpurple16.gif?1406540845');
 }
 
-/* line 1083, ../sass2/icons.scss */
+/* line 1083, ../sass/icons.scss */
 .loadingWhite-onblue16 {
   background: url('../images/icons/loading-white-onblue16.gif?1406540845');
 }
 
 /* Error Images */
-/* line 1088, ../sass2/icons.scss */
+/* line 1088, ../sass/icons.scss */
 .errorFigures {
   background: url('../images/icons/error-stickfigures.png?1406540845');
   width: 160px;
   height: 160px;
 }
 
-/* line 1094, ../sass2/icons.scss */
+/* line 1094, ../sass/icons.scss */
 .errorFiguresGeneralBlue {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-/* line 1099, ../sass2/icons.scss */
+/* line 1099, ../sass/icons.scss */
 .errorFiguresJediBlue {
   background-position: -324px 0;
   background-repeat: no-repeat;
 }
 
-/* line 1104, ../sass2/icons.scss */
+/* line 1104, ../sass/icons.scss */
 .errorFiguresEmptyBlue {
   background-position: -161px 0;
   background-repeat: no-repeat;
 }
 
-/* line 1109, ../sass2/icons.scss */
+/* line 1109, ../sass/icons.scss */
 .errorFiguresGeneralWhite {
   background-position: 0 -163px;
   background-repeat: no-repeat;
 }
 
-/* line 1114, ../sass2/icons.scss */
+/* line 1114, ../sass/icons.scss */
 .errorFiguresJediWhite {
   background-position: -324px -163px;
   background-repeat: no-repeat;
 }
 
-/* line 1119, ../sass2/icons.scss */
+/* line 1119, ../sass/icons.scss */
 .errorFiguresEmptyWhite {
   background-position: -161px -163px;
   background-repeat: no-repeat;
 }
 
 /* CSS Arrows */
-/* line 1125, ../sass2/icons.scss */
+/* line 1125, ../sass/icons.scss */
 .gray-arrow {
   width: 0;
   height: 0;
