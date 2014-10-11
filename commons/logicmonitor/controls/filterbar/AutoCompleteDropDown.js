@@ -1,16 +1,16 @@
 define([
 	'lodash',
-	'lmcore2',
+	'core',
 	'jquery',
-	'lmdropdown2',
-	'commons/logicmonitor2/controls/templates',
-	'lmautocomplete2'
+	'lmdropdown',
+	'commons/logicmonitor/controls/templates',
+	'lmautocomplete'
 ], function(_, LM, $, DropDown, templates, AutoComplete) {
 
 	var AutoCompleteDropDown = DropDown.extend({
 		className: 'lm-dropdown lm-filter-autocomplete-dropdown',
 
-		template: templates['commons/logicmonitor2/controls/filterbar/AutoCompleteDropDown'],
+		template: templates['commons/logicmonitor/controls/filterbar/AutoCompleteDropDown'],
 
 		events: {
 			'click .add-filter-item': '_onAddFilterItem',

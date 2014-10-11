@@ -45,6 +45,15 @@
     return this;
   };
 
+  var localStorage = {};
+
+  try {
+	localStorage = window.localStorage;
+  } catch(e) {
+  }
+
+  B2.localStorage = localStorage;
+
   _.extend(B2, Backbone);
 
   // B2.View
@@ -117,7 +126,7 @@
           if (match && selector) {
             // if select is a regexp
             var selectorExp = /\/(.*?)\//.exec(selector);
-            var regSelector = selectorExp[1];
+            var regSelector = selectorExp && selectorExp[1];
 
             if (regSelector) {
               selector = new RegExp(regSelector.replace(/\\/g, '\\\\'));

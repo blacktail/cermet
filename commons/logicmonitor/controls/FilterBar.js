@@ -1,13 +1,13 @@
 define([
 	'lodash',
-	'lmcore2',
-	'commons/logicmonitor2/controls/templates',
+	'core',
+	'commons/logicmonitor/controls/templates',
 	'commons/3rdparty/jquery-ui/effect-slide'
 ], function (_, LM, templates) {
 	return LM.View.extend({
 		className: 'lm-filter-bar',
 
-		template: templates['commons/logicmonitor2/controls/FilterBar'],
+		template: templates['commons/logicmonitor/controls/FilterBar'],
 
 		events: {
 			'click .del': '_onDelete'

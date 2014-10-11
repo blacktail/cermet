@@ -3,9 +3,9 @@
  */
 define([
 	'lodash',
-	'lmcore2',
-	'commons/logicmonitor2/controls/templates',
-	'lmpager2'
+	'core',
+	'commons/logicmonitor/controls/templates',
+	'lmpager'
 ], function (_, LM, templates, Pager) {
 	return LM.View.extend({
 		className: 'lm-info-table',

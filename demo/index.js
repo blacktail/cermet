@@ -1,8 +1,7 @@
 define([
-    './router',
-    'backbone'
-], function (Router, Backbone) {
-    new Router();
-
-    Backbone.history.start();
+	'backbone',
+	'./router'
+], function(Backbone, Router) {
+	new Router();
+	Backbone.history.start();
 });

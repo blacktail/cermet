@@ -152,7 +152,19 @@ module.exports = function(grunt) {  // jshint ignore:line
 		},
 
 		compass: {
-			style: {
+			dist: {
+				options: {
+					force: true,
+					basePath: 'commons',
+					sassDir: 'sass',
+					cssDir: 'css',
+					imagesDir: 'images',
+					fontsDir: 'fonts',
+					outputStyle: 'expanded',
+					relativeAssets: true
+				}
+			},
+			debug: {
 				options: {
 					force: forceCompass,
 					basePath: 'commons',
@@ -196,9 +208,9 @@ module.exports = function(grunt) {  // jshint ignore:line
 	grunt.loadTasks('commons/grunt_tasks');
 
 	grunt.registerTask('init', ['templates_debug', 'concat']);
-	grunt.registerTask('dist', ['clean', 'init', 'handlebars', 'copy', 'concurrent:requirejs', 'copy:startup', 'clean:temporary', 'init']);
+	grunt.registerTask('dist', ['clean', 'compass:dist', 'init', 'handlebars', 'copy', 'concurrent:requirejs', 'copy:startup', 'clean:temporary', 'init']);
 	grunt.registerTask('default', ['dist']);
-	grunt.registerTask('debug', ['clean', 'compass', 'init']);
+	grunt.registerTask('debug', ['clean', 'compass:debug', 'init']);
 
 	grunt.event.on('watch', function(action, filePath) {
 		grunt.config(['jshint', 'all'], filePath);
@@ -369,7 +381,7 @@ function getWatchConfig() {
 				nospawn: true
 			},
 			files: getSrcFiles(['/commons/sass/**/*']),
-			tasks: ['compass:style']
+			tasks: ['compass:debug']
 		}
 	};
 }

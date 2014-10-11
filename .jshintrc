@@ -1,11 +1,13 @@
 {
-    "curly": true,
-    "noarg": true,
-    "forin": true,
-    "noempty": true,
-    "quotmark": true,
-    "undef": true,
-    "browser": true,
+	"curly": true,
+	"noarg": true,
+	"forin": true,
+	"noempty": true,
+	"quotmark": true,
+	"undef": true,
+	"browser": true,
+	"eqnull": true,
+	"eqeqeq": false,
 
-    "predef": ["jQuery", "_", "$", "define", "require"]
+	"predef": ["jQuery", "_", "$", "define", "require", "console", "alert", "google"]
 }

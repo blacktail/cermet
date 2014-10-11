@@ -3,17 +3,17 @@
  */
 define([
     'lodash',
-    'lmcore2',
+    'core',
     'jquery',
     'backbone',
-    'commons/logicmonitor2/controls/templates',
-	'lmdialog2'
+    'commons/logicmonitor/controls/templates',
+	'lmdialog'
 ], function (_, LM, $, Backbone, templates, Dialog) {
     return Dialog.extend({
 
         className: 'lm-dialog lm-form-dialog',
 
-	    footTemplate: templates['commons/logicmonitor2/controls/FormDialogFoot'],
+	    footTemplate: templates['commons/logicmonitor/controls/FormDialogFoot'],
 
         events: {
 	        'click .toggle-link': '_toggleSectionBox',

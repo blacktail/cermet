@@ -2,7 +2,7 @@ require.config({
     urlArgs: 'v=',
 	baseUrl: '/',
 	waitSeconds: 0,
-	packages: ['commons/logicmomonitor/templates', 'commons/logicmonitor/controls/templates'],
+	packages: ['commons/logicmonitor/templates', 'commons/logicmonitor/controls/templates', 'demo/templates'],
 	paths: {
         'commons/logicmonitor/partials_compiled': 'commons/logicmonitor/templates/.auto_partials',
         'commons/logicmonitor/templates_compiled': 'commons/logicmonitor/templates/.auto_templates',
@@ -27,9 +27,13 @@ require.config({
 		'async': 'commons/3rdparty/async',
 		'highcharts': 'commons/3rdparty/highcharts/highcharts.src',
 		'highcharts-exporting': 'commons/3rdparty/highcharts/modules/exporting.src',
-		'timepickr': 'commons/3rdparty/jquery.timepickr',
 		'jq-validationEngine': 'commons/3rdparty/jquery.validationEngine',
 		'jq-validationEngine-en': 'commons/3rdparty/jquery.validationEngine-en',
+		'base64': 'commons/3rdparty/base64',
+		'md5': 'commons/3rdparty/md5',
+		'moment': 'commons/3rdparty/moment',
+		'es5-shim': 'commons/3rdparty/es5-shim',
+		'jq-blockUI': 'commons/3rdparty/jquery.blockUI',
 
 		/*logicmonitor controls*/
 		'lmsidebar': 'commons/logicmonitor/controls/Sidebar',
@@ -43,7 +47,6 @@ require.config({
 		'lmpager': 'commons/logicmonitor/controls/Pager',
 		'lmcriteriatable': 'commons/logicmonitor/controls/CriteriaTable',
 		'lmsearchbox': 'commons/logicmonitor/controls/SimpleSearchBox',
-		'lmfashiontree': 'commons/logicmonitor/controls/FashionTree',
 		'lmtooltip': 'commons/logicmonitor/controls/Tooltip',
 		'lmautocomplete': 'commons/logicmonitor/controls/AutoComplete',
 		'lminfotable': 'commons/logicmonitor/controls/InfoTable',
@@ -51,13 +54,27 @@ require.config({
 		'lmcheckboxdropdown': 'commons/logicmonitor/controls/filterbar/CheckboxDropDown',
 		'lmradiodropdown': 'commons/logicmonitor/controls/filterbar/RadioDropDown',
 		'lmautocompletedropdown': 'commons/logicmonitor/controls/filterbar/AutoCompleteDropDown',
-		'lmblockui2': 'commons/logicmonitor/controls/BlockUI'
+		'lmblockui': 'commons/logicmonitor/controls/BlockUI',
+		'lmdatepicker': 'commons/3rdparty/jquery-ui/jquery-ui-timepicker-addon',
+		'lmtimepicker': 'commons/3rdparty/jquery-ui/jquery.timepickr'
 	},
 	shim: {
         'handlebars': {
             exports: 'Handlebars'
         },
-        'bootstrap': ['jquery']
+		'highcharts': {
+			deps: ['jquery'],
+			exports: 'Highcharts'
+		},
+		'highcharts-exporting': {
+			deps: ['highcharts'],
+			exports: 'Highcharts'
+		},
+		'jq-validationEngine': ['jquery'],
+		'jq-validationEngine-en': ['jq-validationEngine'],
+		'base64': {
+			exports: 'Base64'
+		}
 	},
 	map: {
 		'*': {

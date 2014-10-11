@@ -11,14 +11,14 @@
  */
 define([
 	'lodash',
-	'lmcore2',
+	'core',
 	'jquery',
-	'commons/logicmonitor2/controls/templates',
+	'commons/logicmonitor/controls/templates',
 	'jq-blockUI'
 ], function (_, LM, $, templates) {
 	return LM.View.extend({
 		//TODO... need define a professional css
-		template: templates['commons/logicmonitor2/controls/BlockMessage'],
+		template: templates['commons/logicmonitor/controls/BlockMessage'],
 
 		_defaultUiOptions: {
 			css: {

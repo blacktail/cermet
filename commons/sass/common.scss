@@ -234,6 +234,132 @@ h6 {
     float: right;
 }
 
+/* -----------------------------------------
+   App Navigation
+----------------------------------------- */
+.top-nav {
+    padding: 0 8px;
+    position: fixed;
+    z-index: 10;
+    background: white;
+    width: 100%;
+    height: 55px;
+    border-bottom: 5px solid #ebebeb;
+    line-height: 55px;
+    border-bottom: none;
+
+    a {
+        font-size: 14px;
+    }
+
+    a.gray-link {
+        color: #757575;
+    }
+
+    .tiny-splitter {
+        display: inline-block;
+        height: 18px;
+        border-right: solid 1px #ccc;
+        position: relative;
+        top: 5px;
+    }
+
+    .logo {
+        @include background(image-url('logo.png', false, true));
+        float: left;
+        display: inline-block;
+        width: 64px;
+        height: 50px;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+
+    .powered-by {
+        @include background(image-url('powered_by.png', false, true));
+        float: left;
+        display: inline-block;
+        width: 188px;
+        height: 32px;
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+/* -----------------------------------------
+    workspace global style, make the sub contents
+    in a predefined container
+----------------------------------------- */
+.workspace-con{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 55px;
+
+    .workspace {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .sidebar-con {
+            position: absolute;
+            left:0;
+            top:0;
+            height: 100%;
+            z-index: 3;
+        }
+
+        .main-con {
+            width: 100%;
+            height: 100%;
+            padding-left: 247px;
+
+            .page-wrapper {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .page-header {
+                    height: 61px;
+                    line-height: 61px;
+                    padding-left: 25px;
+                    z-index: 2;
+                    position: relative;
+                    background: $color-gray8;
+
+                    h1 {
+                        font-size: 30px;
+                        font-weight: normal;
+                        float: left;
+
+                        * {
+                            vertical-align: middle;
+                        }
+
+                        .page-name {
+                            font-size: 30px;
+                        }
+
+                        .page-manage {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .page-content {
+                    height: 100%;
+                    width: 100%;
+                    padding-top: 61px;
+                    overflow: auto;
+                    background: white;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
 .formError {
     .formErrorContent {
         @include border-radius(4px);
@@ -298,3 +424,4 @@ span {
 button[disabled], input[disabled]{
     opacity: 0.4;
 }
+

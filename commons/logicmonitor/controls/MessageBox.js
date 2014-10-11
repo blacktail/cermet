@@ -2,8 +2,8 @@
  * logicmonitor MessageBox, include alert, confirm and prompt box functions
  */
 define([
-    'lmdialog2',
-	'commons/logicmonitor2/controls/templates'
+    'lmdialog',
+	'commons/logicmonitor/controls/templates'
 ], function(Dialog, templates) {
     var MessageBox = Dialog.extend({
 	    className: 'lm-dialog lm-message-box',
@@ -23,8 +23,8 @@ define([
 		    'prompt': 'Please Enter'
 	    },
 
-	    bodyTemplate: templates['commons/logicmonitor2/controls/MessageBox'],
-	    footTemplate: templates['commons/logicmonitor2/controls/MessageBoxFoot'],
+	    bodyTemplate: templates['commons/logicmonitor/controls/MessageBox'],
+	    footTemplate: templates['commons/logicmonitor/controls/MessageBoxFoot'],
 
 	    initialize: function (options) {
 		    this.type = options.type || this.type;

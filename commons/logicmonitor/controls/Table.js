@@ -3,10 +3,10 @@
  */
 define([
 	'lodash',
-	'lmcore2',
-	'commons/logicmonitor2/controls/templates',
-	'lmpager2',
-	'lmblockui2'
+	'core',
+	'commons/logicmonitor/controls/templates',
+	'lmpager',
+	'lmblockui'
 ], function (_, LM, templates, Pager, BlockUI) {
 	return LM.View.extend({
 		className: 'lm-table',

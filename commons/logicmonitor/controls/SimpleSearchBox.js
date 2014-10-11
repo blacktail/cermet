@@ -11,14 +11,14 @@
  */
 define([
     'jquery',
-    'lmcore2',
+    'core',
     'lodash',
-    'commons/logicmonitor2/controls/templates'
+    'commons/logicmonitor/controls/templates'
 ], function($, LM, _, templates) {
     return LM.View.extend({
         className: 'simple-search-box',
 
-        template: templates['commons/logicmonitor2/controls/SimpleSearchBox'],
+        template: templates['commons/logicmonitor/controls/SimpleSearchBox'],
 
         events: {
             'click .clear-handle':    '_onClearQuery',

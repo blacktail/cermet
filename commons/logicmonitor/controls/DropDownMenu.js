@@ -1,7 +1,7 @@
 define([
-    'lmcore2',
+    'core',
     'jquery',
-    'lmdropdown2'
+    'lmdropdown'
 ], function (LM, $, DropDown) {
     return DropDown.extend({
 

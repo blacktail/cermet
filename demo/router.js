@@ -1,36 +1,29 @@
 define([
-    'backbone',
-    './views/Workspace'
-], function (Backbone, Workspace) {
-    return Backbone.Router.extend({
-        routes: {
-            '(tab=:tab)': 'showWorkspace',
-			'*any': 'redirect'
-        },
+	'jquery',
+	'backbone',
+    './views/DemoWorkspaceView'
+], function ($, Backbone, DemoWorkspaceView) {
 
-        initialize: function () {
+	return Backbone.Router.extend({
+		routes: {
+			'(*module)': 'showWorkspace'
+		},
 
-        },
+		initialize: function () {
+		},
 
-        showWorkspace: function (tab) {
-			tab = tab || 'task';
+		showWorkspace: function (module) {
+			module = module || '';
 
-            if (this.workspace) {
-                this.workspace.remove();
-            }
+			if (this.appView) {
+				this.appView.remove();
+			}
 
-            this.workspace = new Workspace({
-                tab: tab
-            });
-
-			$('#main').append(this.workspace.$el);
-			this.workspace.render();
-        },
-
-		redirect: function (any) {
-			console.log(any);
-
-			this.showWorkspace();
+			this.appView = new DemoWorkspaceView({
+				module: module
+			});
+			$('.workspace-con').append(this.appView.el);
+			this.appView.render();
 		}
-    });
+	});
 });

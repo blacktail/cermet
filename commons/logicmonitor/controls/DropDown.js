@@ -1,6 +1,6 @@
 define([
     'lodash',
-    'lmcore2',
+    'core',
     'jquery'
 ], function (_, LM, $) {
     var DropDown = LM.View.extend({

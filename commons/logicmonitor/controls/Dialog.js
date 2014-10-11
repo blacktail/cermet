@@ -3,16 +3,16 @@
  */
 define([
 	'lodash',
-	'lmcore2',
+	'core',
 	'jquery',
-	'commons/logicmonitor2/controls/templates',
+	'commons/logicmonitor/controls/templates',
 	'commons/3rdparty/jquery-ui/draggable'
 ], function (_, LM, $, templates) {
 	return LM.View.extend({
 
 		className: 'lm-dialog',
 
-		dialogTemplate: templates['commons/logicmonitor2/controls/Dialog'],
+		dialogTemplate: templates['commons/logicmonitor/controls/Dialog'],
 
 		// Here, we support use bodyTemplate to render static dialog contents
 		bodyTemplate: function () {

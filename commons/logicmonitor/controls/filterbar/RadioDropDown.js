@@ -1,8 +1,8 @@
 define([
 	'lodash',
-	'lmcore2',
+	'core',
 	'jquery',
-	'lmdropdown2'
+	'lmdropdown'
 ], function(_, LM, $, DropDown) {
 
 	var RadioDropDown = DropDown.extend({

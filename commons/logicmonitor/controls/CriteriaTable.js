@@ -3,11 +3,11 @@
  */
 define([
 	'lodash',
-	'lmcore2',
-	'lmutils2',
-	'commons/logicmonitor2/controls/templates',
-	'lmexpandtable2',
-	'lmmsgbox2'
+	'core',
+	'utils',
+	'commons/logicmonitor/controls/templates',
+	'lmexpandtable',
+	'lmmsgbox'
 ], function (_, LM, utils, templates, ExpandTable, MessageBox) {
 	return ExpandTable.extend({
 		className: 'lm-table lm-expand-table lm-criteria-table',
@@ -16,9 +16,9 @@ define([
 			return '';
 		},
 
-		editColumnTHTemplate: templates['commons/logicmonitor2/controls/partials/CriteriaEditColumnTH'],
+		editColumnTHTemplate: templates['commons/logicmonitor/controls/partials/CriteriaEditColumnTH'],
 
-		editColumnTDTemplate: templates['commons/logicmonitor2/controls/partials/CriteriaEditColumnTD'],
+		editColumnTDTemplate: templates['commons/logicmonitor/controls/partials/CriteriaEditColumnTD'],
 
 		/**
 		 * The default clone data operation, delete the id. Sub class should override this function for

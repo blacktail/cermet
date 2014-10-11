@@ -1,184 +1,153 @@
 /**
- * Create a global namespace 'CM', for some core logics and global definitions
+ * Create a global namespace 'LM', all global variables should put into this namespace
  */
 define([
-    'backbone',
-    'lodash'
-], function(Backbone, _) {
+	'jquery',
+	'b2',
+    'lodash',
+    'utils',
+    'es5-shim'
+], function($, B2, _, utils) {
 
-    window.localStorage = window.localStorage || {};
+    /**
+     * localStorage namespace define:
+     * localStorage.lm           global
+     * localStorage.demo         demo page
+     */
+	var localStorage = {};
 
-    var CM = {
-        localStorage: window.localStorage || {},
-        ENTER_KEY: 13,
-        TAB_KEY: 9
+	try {
+		localStorage = window.localStorage;
+	} catch(e) {
+	}
+
+    var LM = window.LM || {
+        localStorage: localStorage
+     };
+
+	LM.utils = utils;
+
+    /**
+     * We are JSP shop so the default underscore interpolate separator "<%=" and
+     * evaluate separator "<%" don't work. This code below set them to "{{=" and
+     * "{{", respectively.
+     */
+    _.templateSettings = {
+        interpolate: /\{\{\=(.+?)\}\}/g,
+        evaluate: /\{\{(.+?)\}\}/g
     };
 
-    CM.Model = Backbone.Model.extend({
+    /**
+     * Enter keycode
+     */
+    LM.ENTER_KEY = 13;
+    LM.TAB_KEY   = 9;
 
+
+	/**
+	 * Define LM.Model as the base model for all models
+	 */
+    LM.Model = B2.Model.extend({
+	    parse: function (response) {
+		    if (response.status != void 0 && response.data) {
+			    return response.data;
+		    } else {
+			    return response;
+		    }
+	    },
+
+	    save: function (key, val, options) {
+		    var opts = options || {};
+
+		    // Handle both `"key", value` and `{key: value}` -style arguments.
+		    if (key == null || typeof key === 'object') {
+			    opts = val || {};
+		    }
+
+		    if (!opts.error) {
+			    opts.error = function (model, response, options) {
+				    require(['lmmsgbox'], function (MessageBox) {
+					    MessageBox.alert( 'Error - status(' + response.status  + ')<br> errmsg:' + response.errmsg);
+				    });
+			    };
+		    }
+
+		    this._super(key, val || opts, opts);
+	    },
+
+	    destroy: function (options) {
+		    options = options ? _.clone(options) : {};
+
+		    if (!options.error) {
+			    options.error = function (model, response, options) {
+				    require(['lmmsgbox'], function (MessageBox) {
+					    MessageBox.alert( 'Error - status(' + response.status  + ')<br> errmsg:' + response.errmsg);
+				    });
+			    };
+		    }
+
+		    this._super(options);
+	    }
     });
 
-    CM.Collection = Backbone.Collection.extend({
-
-    });
-
-    CM.View = Backbone.View.extend({
-        appEvents: {
-
-        },
-
-        /**
-         * Register a sub view/component to the current view
-         *
-         * @param name The component name for the registered component, can be used in appEvents
-         * @param component The component reference
-         * @param container A dom container, used to append the component
-         * @returns {CM.View}
-         */
-        registerComponent: function (name, component, container) {
-            var i;
-
-            this._components = this._components || {};
-
-            if (this._components.hasOwnProperty(name)) {
-                var comp = this._components[name];
-
-                if (comp.trigger) {
-                    comp.trigger('beforeRemove');
-                }
-
-                this.stopListening(comp, 'all');
-                comp.remove();
-            }
-
-            if (container) {
-                this.$(container).append(component.el);
-                component.render();
-            }
-
-            this._components[name] = component;
-            component._parentView = this;
-            component._componentName = name;
-
-            var delegateEventSplitter = /^(\S+)\s*(\S+)$/;
-
-            for (var key in this.appEvents) {
-                if (this.appEvents.hasOwnProperty(key)) {
-                    var funcName = this.appEvents[key];
-                    var match = key.match(delegateEventSplitter);
-                    var eventName = match[1],
-                        selector = match[2];
-
-                    if (selector === name) {
-                        var eventNames = eventName.split(/,/);
-
-                        for (i = 0; i < eventNames.length; i++) {
-                            this.listenTo(component, eventNames[i], this[funcName]);
-                        }
-                    }
-                }
-            }
-
-            this.listenTo(component, 'all', function (eventName) {
-                if (!component._events || !component._events[eventName]) {
-                    this.trigger.apply(this, arguments);
-                }
-            });
-
-            return this;
-        },
-
-
-        /**
-         * Get a component by the name
-         * @param name
-         * @returns {CM.View}
-         */
-        getComponent: function(name) {
-            return this._components[name];
-        },
-
-        getComponents: function () {
-            return this._components;
-        },
-
-        /**
-         * Remove some subviews or all subviews from current view
-         * @param toRemove Only the specified components will be removed. Leave undefined to remove all subviews
-         */
-        freeChildren: function (toRemove) {
-            _.each(this._components, function(component, name) {
-                var removeFlag = false;
-
-                if (toRemove) {
-                    if (_.isRegExp(toRemove)) {
-                        removeFlag = toRemove.test(name);
-                    } else {
-                        removeFlag = toRemove === name || toRemove === component;
-                    }
+	/**
+	 * Define LM.Collection as the base collection for all collections
+	 */
+    LM.Collection = B2.Collection.extend({
+        parse: function (response) {
+            if (response.status != void 0) {
+                if (response.data && response.data.items)  {
+                    return response.data.items || [];
                 } else {
-                    removeFlag = true;
+                    return response.data || [];
                 }
-
-                if (removeFlag) {
-                    this.stopListening(component, 'all');
-
-                    component.remove();
-
-                    if (this._components[name]) {
-                        delete this._components[name];
-                        delete component._parentView;
-                    }
-                }
-            }, this);
-        },
-
-        /**
-         * remove current view
-         *
-         * First, remove the sub views/components
-         * Second, remove self from the parent view
-         * Third, remove self
-         */
-        remove: function() {
-            // remove all children view
-            this.freeChildren();
-
-            // remove self from parent view and stop all event listeners from parent which used to listen the child events
-            var parentView = this._parentView;
-            if (parentView) {
-                parentView.stopListening(this, 'all');
-
-                if (parentView._components) {
-                    delete parentView._components[this._componentName];
-                }
-
-                delete this._parentView;
+            } else {
+                return response;
             }
-
-            this.trigger('beforeRemove');
-            Backbone.View.prototype.remove.apply(this, arguments);
         }
     });
 
-    var _oldExtend = CM.View.extend;
+	/**
+     * LM.View extends B2.View. All views & widgets have to
+     * extends LM.View rather than Backbone.View.
+     *
+	 * LM.View has the app features, it can be used to manage sub views automatically
+	 * to register a sub view, use "registerComponent"
+	 * to listen the events of the sub view, use "appEvents"
+	 * to get a registered component, use "getComponent"
+     */
+	LM.View = B2.View.extend({
+	});
 
-    // redefine extend to inject the freeChildren method at the top of the render to prevent memory leak
-    CM.View.extend = function (protoProps, staticProps) {
-        if (protoProps.render) {
-            var _oldRender = protoProps.render;
-            protoProps.render = function () {
-                if (this.freeChildren) {
-                    this.freeChildren();
-                }
 
-                return _oldRender.apply(this, arguments);
-            };
+    //avoid console function throw error in IE
+	(function () {
+        var con = window.console;
+        if (con !== undefined && con.log !== undefined) {
+            return;
         }
+        var noop = function () {
+        };
+        var methods = ['assert', 'clear', 'count', 'debug', 'dir',
+            'dirxml', 'error', 'exception', 'group', 'groupCollapsed',
+            'groupEnd', 'info', 'log', 'markTimeline', 'profile',
+            'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd',
+            'timeStamp', 'trace', 'warn'
+        ];
+        var length = methods.length;
+        var console = window.console = {};
+        while (length--) {
+            console[methods[length]] = noop;
+        }
+    })();
 
-        return _oldExtend.call(this, protoProps, staticProps);
-    };
+	$.fn.hasScrollBar = function () {
+		//scrollHeight = topPadding + bottomPadding + contentHeight
+		//innerHeight = topPadding + bottomPadding + contentHeight
+		return this.prop('scrollHeight') > this.innerHeight();
+	};
 
+	window.LM = LM;
 
-    return CM;
+    return LM;
 });

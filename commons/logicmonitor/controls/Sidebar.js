@@ -2,12 +2,13 @@
  * logicmonitor Sidebar control
  */
 define([
-    'lmcore2',
+    'core',
 	'lodash',
-    'commons/logicmonitor2/controls/templates',
+    'commons/logicmonitor/controls/templates',
 	'commons/3rdparty/jquery-ui/resizable',
 	'commons/3rdparty/jquery-ui/effect-slide'
 ], function (LM, _, templates) {
+
     return LM.View.extend({
         className: 'lm-sidebar',
 
@@ -15,7 +16,7 @@ define([
             'click .sidebar-collapse': '_onCollapseSidebar'
         },
 
-        template: templates['commons/logicmonitor2/controls/Sidebar'],
+        template: templates['commons/logicmonitor/controls/Sidebar'],
 
         initialize: function (options) {
 	        this.$expandBtn = options.sidebarExpand || $('.sidebar-expand');

@@ -2,10 +2,10 @@
  * logicmonitor table with secondary data with expanding table
  */
 define([
-	'lmcore2',
-	'lmutils2',
-	'commons/logicmonitor2/controls/templates',
-	'lmtable2'
+	'core',
+	'utils',
+	'commons/logicmonitor/controls/templates',
+	'lmtable'
 ], function (LM, utils, templates, Table) {
 	return Table.extend({
 		className: 'lm-table lm-expand-table',

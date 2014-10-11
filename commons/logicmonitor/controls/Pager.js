@@ -3,13 +3,13 @@
  */
 define([
 	'lodash',
-	'lmcore2',
-	'commons/logicmonitor2/controls/templates'
+	'core',
+	'commons/logicmonitor/controls/templates'
 ], function (_, LM, templates) {
 	return LM.View.extend({
 		className: 'lm-pager',
 		tagName: 'div',
-		template: templates['commons/logicmonitor2/controls/Pager'],
+		template: templates['commons/logicmonitor/controls/Pager'],
 
 		pagerSize: 5,
 		pagerPos: 1,

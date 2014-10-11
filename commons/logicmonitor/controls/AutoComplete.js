@@ -7,8 +7,8 @@
  */
 define([
 	'lodash',
-	'lmutils2',
-	'lmcore2',
+	'utils',
+	'core',
 	'jquery',
 	'commons/3rdparty/jquery-ui/autocomplete'
 ], function (_, utils, LM, $) {
