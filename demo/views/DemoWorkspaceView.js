@@ -1,8 +1,9 @@
 define([
 	'core',
 	'./DemoSidebarView',
-	'demo/templates'
-], function (LM, DemoSidebarView, templates) {
+	'demo/templates',
+	'./sub'
+], function (LM, DemoSidebarView, templates, subViewClasses) {
 
 	return LM.View.extend({
 		className: 'workspace',
@@ -39,17 +40,17 @@ define([
 		},
 
 		_registerMainContentView: function (module) {
-//			var SubView = subViewClasses[module];
-//
-//			if (!SubView) {
-//				console.log ('not implemented yet, for the module', module);
-//				return;
-//			}
-//
-//			// register maincontent subview
-//			this.registerComponent('main', new SubView({
-//				module: module
-//			}), '.main-con');
+			var SubView = subViewClasses[module];
+
+			if (!SubView) {
+				console.log ('not implemented yet, for the module', module);
+				return;
+			}
+
+			// register maincontent subview
+			this.registerComponent('main', new SubView({
+				module: module
+			}), '.main-con');
 		},
 
 		_onSidebarResize: function () {

@@ -2,7 +2,7 @@ require.config({
     urlArgs: 'v=',
 	baseUrl: '/',
 	waitSeconds: 0,
-	packages: ['commons/logicmonitor/templates', 'commons/logicmonitor/controls/templates', 'demo/templates'],
+	packages: ['commons/logicmonitor/templates', 'commons/logicmonitor/controls/templates', 'demo/templates', 'demo/views/sub'],
 	paths: {
         'commons/logicmonitor/partials_compiled': 'commons/logicmonitor/templates/.auto_partials',
         'commons/logicmonitor/templates_compiled': 'commons/logicmonitor/templates/.auto_templates',
