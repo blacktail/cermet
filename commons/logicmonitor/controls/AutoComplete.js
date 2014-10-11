@@ -1,9 +1,6 @@
 /**
  * @name AutoComplete
  * @description a comboBox that you can filter the select by your input and read the data from remote
- * @usage
- * - options.fieldName: you can fetch one field if return is a object list by set the fiedlName option
- * - resultsLimit: auto append the results=xxx in the query path.
  */
 define([
 	'lodash',
