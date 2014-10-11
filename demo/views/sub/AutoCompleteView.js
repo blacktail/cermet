@@ -4,6 +4,8 @@ define([
 	'lmautocomplete'
 ], function (LM, templates, AutoComplete) {
 	return LM.View.extend({
+		className: 'page-wrapper',
+
 		template: templates['demo/AutoComplete'],
 
 		initialize: function () {

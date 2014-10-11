@@ -2,10 +2,12 @@
  * sub package
  */
 define([
-    './AutoCompleteView'
-], function (AutoCompleteView) {
+    './AutoCompleteView',
+	'./ButtonsView'
+], function (AutoCompleteView, ButtonsView) {
 
     return {
-        'auto-complete': AutoCompleteView
+        'auto-complete': AutoCompleteView,
+	    'buttons': ButtonsView
     };
 });
