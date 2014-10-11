@@ -1,0 +1,49 @@
+<div class="fashion-tree-head">
+    <div class="small-title">Device Tree</div>
+    <div class="breadcrumb">
+        <div class="breadcrumb-home arrow-box active  {{#unless breadcrumbName}}only-home{{/unless}}" data-node-type="folder" data-id="{{id}}"><span class="icons16 homeWhite"></span></div>
+        <div class="breadcrumb-rollup arrow-box" {{#lessThan parentsLength 2}}style="display: none;"{{/lessThan}}>
+            <span  class="number">{{parentsLengthMinus}}</span>
+            <span class="icons16 downArrow-white"></span>
+        </div>
+        <div class="rollup-dropdown" style="display: none;">
+            <ul>
+                {{#each parents}}
+                    {{#unlessequal @index 0}}
+                    <li data-id="{{id}}" data-node-type="folder">{{name}}</li>
+                    {{/unlessequal}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="breadcrumb-item" data-id="{{id}}" data-name="{{breadcrumbName}}" data-node-type="folder">
+            <span>{{breadcrumbName}}</span>
+        </div>
+    </div>
+</div>
+<div class="fashion-tree-body">
+    <div class="breadcrumb-bars" style="width: {{multiply 6 parentsLength}}px;">
+        {{#each parents}}
+            <div data-index="{{@index}}"  class="breadcrumb-bar" data-node-type="folder" style="background-color: rgb({{getColorOfRegion @index ../parentsLength 0 200}})"></div>
+        {{/each}}
+    </div>
+    <div class="tree-list">
+        <ul>
+            {{#each nodes}}
+            <li class="{{nodeType}}" data-name="{{name}}" data-id={{id}} data-node-type="{{nodeType}}"
+                style="padding-left:{{multiply 6 ../parentsLengthPlus}}px">
+                <span class="node-name">{{#ifequal nodeType "item"}}{{displayedAs}}{{else}}{{name}}{{/ifequal}}</span>
+                {{#ifequal nodeType "folder"}}
+                <span class="icons24 folderGroup" style=""></span>
+                {{/ifequal}}
+            </li>
+            {{/each}}
+            {{#if isEmpty}}
+                <li class="empty">
+                    <span>Empty Group</span>
+                </li>
+            {{/if}}
+
+        </ul>
+    </div>
+</div>
+<div class="position-locate"></div>

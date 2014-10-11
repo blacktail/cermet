@@ -1,0 +1,84 @@
+/* -----------------------------------------
+    static tree used in the setting page now
+    may used other places in the future
+----------------------------------------- */
+@import "./variable";
+
+.lm-static-tree {
+    padding-top: 5px;
+    min-width: 247px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    > ul {
+        li {
+            padding-left: 20px;
+            line-height: 30px;
+
+            a {
+                font-size: 18px;
+                color: $color-dark-gray;
+                font-weight: 500;
+                cursor: pointer;
+                border-bottom: none;
+                display: inline-block;
+                width: 100%;
+            }
+
+            &:hover {
+                background: $color-light-blue;
+
+                a {
+                    color: #333;
+                }
+            }
+
+            &.selected {
+                background: $color-blue;
+
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            &.heading.with-menu, &.menu {
+                cursor: default;
+                &:hover {
+                    background: none;
+
+                    > a {
+                        color: $color-dark-gray;
+                    }
+                }
+            }
+
+            &.heading {
+                margin-top: 12px;
+                font-size: 18px;
+                font-weight: 500;
+                color: $color-dark-gray;
+            }
+
+            > ul {
+                margin-left: -20px;
+
+                > li {
+                    padding-left: 31px;
+                    padding-right: 10px;
+                    line-height: 28px;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                }
+            }
+
+        }
+    }
+}

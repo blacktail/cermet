@@ -1,0 +1,17 @@
+@import "variable";
+
+.lm-form-dialog {
+    .dialog-foot {
+        a, button {
+            &.btn-delete {
+                margin-top: 10px;
+                border-bottom: 0.12em dashed #CCCCCC;
+                text-decoration: none;
+                font-weight: normal;
+                color: $color-purple2;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

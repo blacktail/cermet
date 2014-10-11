@@ -1,0 +1,225 @@
+@import "compass/css3";
+
+body {
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"], textarea {
+        padding: 2px 6px 0 6px;
+        background-color: white;
+        font-family: inherit;
+        border: 1px solid #cccccc;
+        @include border-radius(2px);
+        @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.1));
+        color: rgba(0, 0, 0, 0.75);
+        display: block;
+        height: 34px;
+        width: 100%;
+        @include transition(all 0.15s linear);
+        font-size: 16px;
+
+    }
+}
+
+/* checkbox */
+.styled-checkbox {
+    width: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 18px;
+
+    input {
+        margin: 4px 2px 0 0;
+        vertical-align: top;
+    }
+    label {
+        background: #ffffff;
+        border: 1px solid #CCCCCC;
+        @include border-radius(2px);
+        cursor: pointer;
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.1) inset);
+
+        &:after {
+            @include opacity(0);
+            background: transparent;
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 5px;
+            top: 4px;
+            left: 4px;
+            border: 3px solid rgba(0, 0, 0, 0.75);
+            border-top: none;
+            border-right: none;
+
+            @include transform(rotate(-45deg));
+        }
+
+        &:hover::after {
+            @include opacity(0.5);
+        }
+    }
+
+    input[type=checkbox]:checked + label:after {
+        @include opacity(1);
+    }
+
+    input:disabled + label {
+        background-color: #eee;
+        cursor: default;
+        &:hover::after {
+            @include opacity(1);
+        }
+    }
+
+    & + .checkbox-label {
+        position: relative;
+        margin-left: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        &.multiple {
+            padding-right: 12px;
+        }
+    }
+}
+
+/* select */
+.styled-select {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    @include border-radius(2px);
+    @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.1) inset);
+    height: 34px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    select {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        border: medium none;
+        @include border-radius(0);
+        height: 100%;
+        line-height: 1;
+        width: 130%;
+
+        &[disabled] {
+            color: #aaaaaa;
+        }
+    }
+
+    .handle {
+        position: absolute;
+        top: 5px;
+        right: 4px;
+    }
+}
+
+/* styled radio */
+.styled-radio {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+        @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.1) inset);
+        @include border-radius(10px);
+        text-align: center;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -5px;
+            margin-left: -5px;
+            width: 10px;
+            height: 10px;
+            @include border-radius(5px);
+            background: transparent;
+            display: inline-block;
+        }
+    }
+
+    input[type=radio] {
+        display: none;
+
+        &:checked + label:before {
+            background: #333333;
+        }
+    }
+
+    & + .radio-label {
+        position: relative;
+        margin-left: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        top: 1px;
+        font-weight: normal;
+        &.multiple {
+            padding-right: 12px;
+        }
+    }
+}
+
+.styled-phone-input{
+    input[type="text"] {
+      display: inline-block;
+      width: 200px;
+      margin: 0 5px;
+
+      &.phone-country-num{
+        width: 30px
+      }
+    }
+}
+
+.styled-date-range, .styled-lookup, .styled-time {
+    background: white;
+    position: relative;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    padding: 1px 30px 0 0;
+    @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.1) inset);
+
+    input[type="text"] {
+        border: 0;
+        @include box-shadow(none);
+        margin: 0;
+        padding: 5px 0 2px 6px;
+        &:focus {
+            border: 0;
+            outline: none;
+        }
+    }
+    .handle {
+        position: absolute;
+        right: 4px;
+        top: 6px;
+        cursor: pointer;
+    }
+}
+

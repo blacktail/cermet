@@ -1,0 +1,29 @@
+.lm-menu {
+    margin: 0;
+
+    li {
+        font-size: 16px;
+        margin: 1px 0;
+
+        &.lm-menu-seperator:after {
+            content: '';
+            display: block;
+            border-bottom: 1px solid #aaa;
+            margin: 0 10px
+        }
+        a {
+            height: 36px;
+            line-height: 36px;
+            padding-left: 15px;
+            border: none;
+            display: block;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        &:hover {
+            background: #ededed;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+@import "./variable";
+@import "compass/css3";
+
+@mixin color-schema($borderColor, $fontColor, $oddRowColor, $evenRowColor) {
+    caption {
+        * {
+            color: $fontColor;
+        }
+    }
+
+    .pager-splitter {
+        background: #ccc;
+    }
+
+    th, td {
+        border-right-color: $borderColor;
+    }
+
+    td {
+        &, * {
+            color: $fontColor;
+        }
+    }
+    th {
+        border-bottom-color: $borderColor;
+
+        &, * {
+            color: $fontColor;
+        }
+    }
+    tbody tr.data-row {
+        &:nth-of-type(odd) {
+            background: $oddRowColor;
+        }
+        &:nth-of-type(even){
+            background: $evenRowColor;
+        }
+    }
+}
+
+.lm-table {
+    position: relative;
+    width: 100%;
+
+    th, td {
+        border-right: 1px dashed #c3c2c2;
+        line-height: 38px;
+        padding-left: 10px;
+        padding-right: 5px;
+        text-align: left;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &.center {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+    }
+
+    th {
+        border-bottom: 1px solid #ccc;
+
+        &, * {
+            font-size: 12px;
+            font-weight: 700;
+            color: $color-dark-gray;
+        }
+
+        &.col-chkbox {
+            min-width: 39px;
+            max-width: 39px;
+        }
+
+        &.col-alert-status {
+            min-width: 40px;
+            max-width: 40px;
+
+            span {
+                vertical-align: middle;
+            }
+        }
+
+        &.sortable {
+            cursor: pointer;
+            @include user-select(none);
+
+            .gray-arrow {
+                display: none;
+                margin-left: 12px;
+            }
+
+            &.asc {
+                .gray-arrow {
+                    display: inline-block;
+                    @include transform(rotate(-180deg));
+                }
+            }
+
+            &.desc {
+                .gray-arrow {
+                    display: inline-block;
+                    @include transform(rotate(0deg));
+                }
+            }
+        }
+    }
+
+    td {
+        &, * {
+            font-size: 12px;
+            font-weight: normal;
+            color: $color-dark-gray;
+        }
+
+    }
+
+    tbody {
+        overflow-y: auto;
+        tr.data-row {
+            &:nth-of-type(odd){
+                background: $color-gray7;
+            }
+            &:nth-of-type(even){
+                background: white;
+            }
+
+            &:hover {
+                background: $color-blue;
+                td{
+                    border-right:1px dashed white;
+                    &, * {
+                        color: white;
+                    }
+                    &.col-expand-btn{
+                        border:none;
+                    }
+                }
+            }
+        }
+        border-bottom: 2px solid #ccc;
+    }
+
+    caption, tfoot {
+        display: none;
+
+        td {
+            padding-left: 0;
+            text-align: center;
+        }
+        .lm-pager {
+            * {
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+    }
+
+
+    /* Define a blue color schema */
+    &.blue {
+        @include color-schema(white, white, $color-dark-blue, $color-blue);
+
+        th {
+          font-weight: 700;
+        }
+
+        tbody {
+            tr.data-row {
+                &:hover {
+                    background: $color-gray7;
+                    td{
+                        color: $color-dark-gray;
+                    }
+                }
+            }
+        }
+    }
+
+    /* for any embedded table, the border-bottom-width of the th is 3px */
+    .lm-table {
+        th {
+            border-bottom-width: 3px;
+        }
+    }
+}
+
+

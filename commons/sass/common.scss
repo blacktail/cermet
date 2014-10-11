@@ -1,0 +1,300 @@
+
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "./controls/_variable";
+
+/* -----------------------------------------
+  Museo Sans
+----------------------------------------- */
+
+/*Museo Sans 100*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_100-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_100-webfont.svg#MuseoSans100') format('svg'),
+    url('../fonts/MuseoSans/museosans_100-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_100-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_100-webfont.ttf') format('truetype');
+
+    font-weight: 100;
+    font-style: normal;
+}
+/*Museo Sans 100 italic*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_100_italic-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_100_italic-webfont.svg#MuseoSans100') format('svg'),
+    url('../fonts/MuseoSans/museosans_100_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_100_italic-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_100_italic-webfont.ttf') format('truetype');
+
+    font-weight: 100;
+    font-style: italic;
+}
+/*Museo Sans 300*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_300-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_300-webfont.svg#MuseoSans300') format('svg'),
+    url('../fonts/MuseoSans/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_300-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_300-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+/*Museo Sans 300 italic*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_300_italic-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_300_italic-webfont.svg#MuseoSans300') format('svg'),
+    url('../fonts/MuseoSans/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_300_italic-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_300_italic-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: italic;
+}
+/*Museo Sans 300*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_300-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_300-webfont.svg#MuseoSans300') format('svg'),
+    url('../fonts/MuseoSans/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_300-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_300-webfont.ttf') format('truetype');
+
+    font-weight: 300;
+    font-style: normal;
+}
+/*Museo Sans 300 italic*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_300_italic-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_300_italic-webfont.svg#MuseoSans300') format('svg'),
+    url('../fonts/MuseoSans/museosans_300_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_300_italic-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_300_italic-webfont.ttf') format('truetype');
+
+    font-weight: 300;
+    font-style: italic;
+}
+/*Museo Sans 500 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_500-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_500-webfont.svg#MuseoSans500') format('svg'),
+    url('../fonts/MuseoSans/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_500-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_500-webfont.ttf') format('truetype');
+
+    font-weight: 500;
+    font-style: normal;
+}
+/*Museo Sans 700 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_700-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_700-webfont.svg#MuseoSans700_italic') format('svg'),
+    url('../fonts/MuseoSans/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_700-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_700-webfont.ttf') format('truetype');
+
+    font-weight: 700;
+    font-style: normal;
+}
+/*Museo Sans 700 italic*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_700_italic-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_700_italic-webfont.svg#MuseoSans700_italic') format('svg'),
+    url('../fonts/MuseoSans/museosans_700_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_700_italic-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_700_italic-webfont.ttf') format('truetype');
+
+    font-weight: 700;
+    font-style: italic;
+}
+/*Museo Sans 900*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_900-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_900-webfont.svg#MuseoSans900') format('svg'),
+    url('../fonts/MuseoSans/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_900-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_900-webfont.ttf') format('truetype');
+
+    font-weight: 900;
+    font-style: normal;
+}
+/*Museo Sans 900 italic*/
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/museosans_900_italic-webfont.eot');
+    src: url('../fonts/MuseoSans/museosans_900_italic-webfont.svg#MuseoSans900_italic') format('svg'),
+    url('../fonts/MuseoSans/museosans_900_italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/museosans_900_italic-webfont.woff') format('woff'),
+    url('../fonts/MuseoSans/museosans_900_italic-webfont.ttf') format('truetype');
+
+    font-weight: 900;
+    font-style: italic;
+}
+
+@mixin force-width($width) {
+    width: $width;
+    max-width: $width;
+    min-width: $width;
+}
+
+/* override browser's default scrollbar style*/
+::-webkit-scrollbar-track-piece {
+    background-color:#fff;
+    border-left:1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+::-webkit-scrollbar {
+    width:13px;
+    height:10px;
+    border: solid 1px #ddd;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#cbcbcb;
+    background-clip:padding-box;
+    border:1px solid #bbb;
+    min-height:28px;
+}
+::-webkit-scrollbar-thumb:hover {
+    border:1px solid #636363;
+    background-color:#929292;
+}
+
+/* -----------------------------------------
+   global styles
+----------------------------------------- */
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+body, body * {
+    @include box-sizing(border-box);
+    font-family: 'MuseoSans';
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.app {
+    background: none repeat scroll 0 0 #F5F5F5;
+}
+
+a {
+    border-bottom:  1px dashed #CCCCCC;
+    color: $color-purple;
+
+    &:link {color: $color-purple; text-decoration: none;}
+    &:hover, &:active, &:focus { color: #0d8dcc; }
+}
+
+.clearfix, .add-clearfix {
+    @include clearfix;
+}
+
+ul, ol, dl {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.formError {
+    .formErrorContent {
+        @include border-radius(4px);
+        border: none;
+        @include box-shadow(2px 2px 3px #999);
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: bold;
+        background: #ea262b;
+    }
+    .formErrorArrow {
+        div {
+            border: none;
+            background: #ea262b;
+        }
+        .line3 {
+            border: none;
+        }
+        .line2 {
+            background: none;
+        }
+        .line1 {
+            background: none;
+        }
+    }
+}
+
+.bottom-action-area{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid gray;
+  background: white;
+}
+
+/* datetime picker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+.ellips {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+span {
+    &.ellips {
+        display: inline-block;
+    }
+}
+
+button[disabled], input[disabled]{
+    opacity: 0.4;
+}

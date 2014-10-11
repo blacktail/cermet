@@ -1,0 +1,210 @@
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+.lm-expand-table {
+    .lm-button.small-small.gray {
+        background: #ccc;
+    }
+
+    th,td {
+        &.col-expand-btn {
+            background: white;
+            width: 24px;
+            text-align:left;
+            border-right: none;
+            border-bottom: none;
+        }
+    }
+
+    td.col-expand-content{
+        padding-left: 0;
+    }
+
+    td.col-expand-btn {
+        @include user-select(none);
+        border-right: none;
+
+        span {
+            cursor: pointer;
+        }
+        .gray-arrow {
+            @include transition(transform, .15s, ease-in);
+            &, &.right {
+                @include transform(rotate(-90deg));
+            }
+
+            &.down {
+                @include transform(rotate(0));
+            }
+        }
+    }
+
+
+    > tbody {
+        border-bottom: none;
+
+        > tr {
+            &.data-row {
+                cursor: pointer;
+                &.expand {
+                    border-top: 1px solid white;
+
+                    td {
+                        background: $color-light-blue;
+                        border-bottom: 1px solid $color-dark-gray;
+                        border-right: 1px dashed white;
+
+                        &.col-expand-btn {
+                            background: white;
+                            border:none;
+                        }
+                    }
+                }
+
+                td .embed-handle {
+                    width: 37px;
+                    display: inline-block;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    height: 36px;
+                    position: relative;
+
+                    &.active {
+                        top: 3px;
+                        background: $color-dark-blue;
+
+                        .lm-button {
+                            background: none;
+                            border: none;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+                }
+
+                &.last {
+                    td {
+                        &.col-expand-btn {
+                            border-bottom: none;
+                        }
+
+                        border-bottom: solid 2px #ccc;
+                    }
+
+                    &.expand, &.active {
+                        td {
+                            &.col-expand-btn {
+                                border-bottom: none;
+                            }
+
+                            border-bottom: solid 1px $color-dark-gray;
+                        }
+                    }
+                }
+            }
+
+            &.expanded-panel {
+                display: none;
+
+                td {
+                    border-bottom: 1px solid white;
+                    background: $color-light-blue;
+
+                    &.col-expand-btn {
+                        background: none;
+                        border: none;
+                    }
+                }
+
+                &.expand {
+                    display: table-row;
+                }
+
+                ul.expanded-con {
+                    li {
+                        @include clearfix;
+                        line-height: 36px;
+                        padding-left: 10px;
+                        border-bottom: 1px solid $color-dark-gray;
+
+                        &.action-row {
+                            border-top: 1px dashed #333;
+                            border-bottom: none;
+
+                            .action-item {
+                                padding-right: 30px;
+
+                                * {
+                                    vertical-align: middle;
+                                }
+
+                                a {
+                                    color: black;
+                                    border:none;
+
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-last-of-type(2) {
+                            border-bottom: none;
+                        }
+                    }
+
+                    &.vertical {
+                        li {
+                            .item-label, .item-value {
+                                float: left;
+                            }
+
+                            .item-label {
+                                width: 150px;
+                            }
+                        }
+                    }
+
+                    &.horizon {
+                        li {
+                            .item {
+                                label {
+                                    font-weight: 500;
+                                    margin-right: 5px;
+                                }
+
+                                display: inline-block;
+                                padding-right: 50px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+            &.embedded-panel {
+                display: none;
+
+                td.col-expand-btn {
+                    border: none;
+                }
+
+                > td {
+                    background: $color-dark-blue;
+                    padding: 10px;
+
+                    &.col-expand-btn {
+                        background: none;
+                    }
+                }
+
+                .embedded-con {
+                    overflow: hidden;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

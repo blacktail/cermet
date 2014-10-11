@@ -1,0 +1,48 @@
+@import "variable";
+
+.lm-info-table{
+    width: 100%;
+
+    tbody tr {
+        &:nth-of-type(odd) {
+            background: white;
+
+            .info-name {
+                background: $color-light-blue2;
+            }
+        }
+        &:nth-of-type(even){
+            background: $color-light-blue2;
+
+            .info-name {
+                background: $color-light-blue;
+            }
+        }
+    }
+
+    td{
+        text-align: left;
+        padding-left: 20px;
+        line-height: 25px;
+
+        &, * {
+            font-size: 12px;
+        }
+    }
+
+    .info-name{
+        text-align: right;
+        padding-right: 20px;
+        border-right: 1px dashed #aaacad;
+        width: 10px;
+        font-weight: 500;
+    }
+
+    .secondary-column.info-name{
+        border-left: 1px solid #7d7d7d;
+    }
+
+    border-top: 1px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    margin-bottom: 0;
+}

@@ -1,0 +1,58 @@
+@import "variable";
+
+.section-box {
+    position: relative;
+
+    .section-header {
+        margin: 25px 0;
+
+        a, span {
+            font-size: 24px;
+            color: #098ccc;
+            font-weight: normal;
+            vertical-align: middle;
+        }
+
+        + .section-content {
+            > .section-row:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .section-content {
+        padding: 0 25px;
+    }
+    .toggle-link {
+        border-bottom: none;
+    }
+}
+
+.section-row {
+    margin: 25px 0;
+
+    label {
+        font-size: 16px;
+        color: #4d4d4d;
+        cursor: pointer;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .radio-des-left {
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .inline {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .section-content {
+        .section-row {
+            margin: 10px 0;
+        }
+    }
+}

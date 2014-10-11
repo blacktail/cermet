@@ -1,0 +1,91 @@
+/* core stuff */
+.ui-timepickr { position: absolute; text-align: left; padding: 5px; border-radius: 4px; border:solid 1px #ccc;background:white;height:95px;}
+.ui-timepickr ol { margin-top: 2px; }
+.ui-timepickr li { float: left; font-size: 14px; padding: 2px 4px 2px 4px; margin-left: 1px; cursor: pointer; background:#ebeaea; border: solid 2px #b6b6b6;} 
+.ui-timepickr li.ui-state-hover {
+    background: #b6b6b6;
+    font-weight: bold;
+}
+/* ui.dropslide */
+
+.ui-dropslide      { position: absolute; }
+.ui-dropslide ol   { margin-top: 2px; list-style: none; }
+.ui-dropslide li   { float: left; }
+.ui-dropslide span {
+    font-size: .7em;
+    padding: 4px 6px 4px 6px;
+    margin-left: 2px;
+    text-align: center;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+}
+.ui-timepickr ol li.hour, 
+.ui-timepickr ol li.minute, 
+.ui-timepickr ol li.second {}
+
+/* dark theme */
+
+.ui-timepickr.dark span {
+    border: 0;
+    color: #ccc;
+    background: #333;
+    font-weight: bold;
+    border: 1px solid #555;
+}
+.ui-timepickr.dark span:hover {
+    color: #eee;
+    background: #333;
+    border: 1px solid #777;
+}
+
+.ui-timepickr {
+    position:absolute;
+    width:510px;
+}
+
+.ui-timepickr-row {
+    margin:0;
+    padding:0;
+    margin-top:2px; 
+    display:none;
+    position:relative;
+}
+
+.ui-timepickr-button {
+    float:left;
+    margin:0;
+    padding:0;
+    list-style:none;
+    list-style-type:none;
+}
+
+.ui-timepickr-button span {
+    font-size:.7em;
+    padding:4px 6px 4px 6px;
+    margin-left:2px;
+    text-align:center;
+    cursor:pointer;
+    display:block;
+    text-align:center;
+
+
+    /* system theme (default) */
+    border-width:1px;
+    border-style:solid;
+    /*border-color:ThreeDLightShadow ThreeDShadow ThreeDShadow ThreeDLightShadow;
+    color:ButtonText;
+    background:ButtonFace;*/
+}
+
+.ui-timepickr-button span.ui-state-hover {
+    /*color:HighlightText;
+    background:Highlight;*/
+}
+
+.ui-state-hover span {
+    /*background:#c30;*/
+}

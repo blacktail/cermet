@@ -1,0 +1,1132 @@
+@import "compass/css3";
+
+h1 .iconsWrapper {
+	font-size: 16px;
+}
+
+table {
+	margin-bottom: 20px;
+}
+
+.iconsWrapper .sectionTitle {
+	font-size: 25px;
+}
+
+.purpleBgd span {
+	background-color: #621f71;
+}
+
+.blueBgd span {
+	background-color: #56b6d9;
+}
+
+.icons24 {
+	@include background(image-url('icons/icons24.png', false, true));
+	width: 26px;
+	height: 26px;
+}
+
+.icons16 {
+	@include background(image-url('icons/icons16.png', false, true));
+	width: 18px;
+	height: 18px;
+}
+
+span.icons24, span.icons16, span.circle20, span.loading, span.loading16, span.errorFigures {
+	display: inline-block;
+}
+
+/* 24px icons */
+.icons24.handle {
+	width: 22px;
+	height: 22px;
+}
+
+.styled-select .icons24.handle {
+	background-position: -26px 0;
+    pointer-events: none;
+}
+
+.styled-time .icons24.handle {
+	background-position: 0 0;
+}
+
+.styled-date-range .icons24.handle {
+	background-position: -52px 0;
+}
+
+.styled-lookup .icons24.handle {
+	background-position: -78px 0;
+}
+
+.icons24.inlineHelp-gray {
+	background-position: -130px 0;
+}
+
+.icons24.inlineHelp-green {
+	background-position: -156px 0;
+}
+
+.icons24.visibility-gray {
+	background-position: -234px 0;
+}
+
+.icons24.advancedSearch-purple {
+	background-position: 0 -26px;
+}
+
+.icons24.help-gray {
+	background-position: -26px -26px;
+}
+
+.icons24.dateRange-purple {
+	background-position: -52px -26px;
+}
+
+.icons24.addDash-purple {
+	background-position: -78px -26px;
+}
+
+.icons24.sdt-blue {
+	background-position: -104px -26px;
+}
+
+.icons24.sdt-purple {
+	background-position: -130px -26px;
+}
+
+.icons24.sdt-gray {
+	background-position: -364px -26px;
+}
+
+.icons24.services-purple {
+	background-position: 0 -52px;
+}
+
+.icons24.services-white {
+	background-position: -26px -52px;
+}
+
+.icons24.services-gray {
+	background-position: -52px -52px;
+}
+
+.icons24.services-blue {
+	background-position: -78px -52px;
+}
+
+.icons24.dash-purple {
+	background-position: -104px -52px;
+}
+
+.icons24.dash-white {
+	background-position: -130px -52px;
+}
+
+.icons24.dash-gray {
+	background-position: -156px -52px;
+}
+
+.icons24.dash-blue {
+	background-position: -182px -52px;
+}
+
+.icons24.hosts-purple {
+	background-position: -208px -52px;
+}
+
+.icons24.hosts-white {
+	background-position: -234px -52px;
+}
+
+.icons24.hosts-gray {
+	background-position: -260px -52px;
+}
+
+.icons24.hosts-blue {
+	background-position: -286px -52px;
+}
+
+.icons24.alerts-purple {
+	background-position: -312px -52px;
+}
+
+.icons24.alerts-white {
+	background-position: -338px -52px;
+}
+
+.icons24.alerts-gray {
+	background-position: -364px -52px;
+}
+
+.icons24.alerts-blue {
+	background-position: -390px -52px;
+}
+
+.icons24.report-purple {
+	background-position: 0 -78px;
+}
+
+.icons24.report-white {
+	background-position: -26px -78px;
+}
+
+.icons24.report-gray {
+	background-position: -52px -78px;
+}
+
+.icons24.report-blue {
+	background-position: -78px -78px;
+}
+
+.icons24.settings-purple {
+	background-position: -104px -78px;
+}
+
+.icons24.settings-white {
+	background-position: -130px -78px;
+}
+
+.icons24.settings-gray {
+	background-position: -156px -78px;
+}
+
+.icons24.settings-blue {
+	background-position: -182px -78px;
+}
+
+.icons24.serviceGroup-gray {
+	background-position: -208px -78px;
+	width: 32px;
+}
+
+.icons24.alertsCritical {
+	background-position: 0px -104px;
+}
+
+.icons24.alertsError {
+	background-position: -26px -104px;
+}
+
+.icons24.alertsWarning {
+	background-position: -52px -104px;
+}
+
+.icons24.alertsDisabled {
+	background-position: -78px -104px;
+}
+
+.icons24.alertsCritical-ack {
+	background-position: -104px -104px;
+}
+
+.icons24.alertsError-ack {
+	background-position: -130px -104px;
+}
+
+.icons24.alertsWarning-ack {
+	background-position: -156px -104px;
+}
+
+.icons24.alertsCriticalSDT {
+	background-position: -182px -104px;
+}
+
+.icons24.alertsErrorSDT {
+	background-position: -208px -104px;
+}
+
+.icons24.alertsWarningSDT {
+	background-position: -234px -104px;
+}
+
+.icons24.alertsCriticalSDT-ack {
+	background-position: -260px -104px;
+}
+
+.icons24.alertsErrorSDT-ack {
+	background-position: -286px -104px;
+}
+
+.icons24.alertsWarningSDT-ack {
+	background-position: -312px -104px;
+}
+
+.icons24.alertsCleared {
+	background-position: -338px -104px;
+}
+
+.icons24.alertsCritical-down {
+	background-position: 0px -130px;
+}
+
+.icons24.alertsCritical-up {
+	background-position: -26px -130px;
+}
+
+.icons24.alertsError-down {
+	background-position: -52px -130px;
+}
+
+.icons24.alertsError-up {
+	background-position: -78px -130px;
+}
+
+.icons24.alertsWarning-down {
+	background-position: -104px -130px;
+}
+
+.icons24.alertsWarning-up {
+	background-position: -130px -130px;
+}
+
+.icons24.alertsDisabled-down {
+	background-position: -156px -130px;
+}
+
+.icons24.alertsDisabled-up {
+	background-position: -182px -130px;
+}
+
+.icons24.alertsCritical-ack-down {
+	background-position: -208px -130px;
+}
+
+.icons24.alertsCritical-ack-up {
+	background-position: -234px -130px;
+}
+
+.icons24.alertsError-ack-down {
+	background-position: -260px -130px;
+}
+
+.icons24.alertsError-ack-up {
+	background-position: -286px -130px;
+}
+
+.icons24.alertsWarning-ack-down {
+	background-position: -312px -130px;
+}
+
+.icons24.alertsWarning-ack-up {
+	background-position: -338px -130px;
+}
+
+.icons24.alertsCriticalSDT-down {
+	background-position: -364px -130px;
+}
+
+.icons24.alertsCriticalSDT-up {
+	background-position: -390px -130px;
+}
+
+.icons24.alertsErrorSDT-down {
+	background-position: 0px -156px;
+}
+
+.icons24.alertsErrorSDT-up {
+	background-position: -26px -156px;
+}
+
+.icons24.alertsWarningSDT-down {
+	background-position: -52px -156px;
+}
+
+.icons24.alertsWarningSDT-up {
+	background-position: -78px -156px;
+}
+
+.icons24.alertsCriticalSDT-ack-down {
+	background-position: -104px -156px;
+}
+
+.icons24.alertsCriticalSDT-ack-up {
+	background-position: -130px -156px;
+}
+
+.icons24.alertsErrorSDT-ack-down {
+	background-position: -156px -156px;
+}
+
+.icons24.alertsErrorSDT-ack-up {
+	background-position: -182px -156px;
+}
+
+.icons24.alertsWarningSDT-ack-down {
+	background-position: -208px -156px;
+}
+
+.icons24.alertsWarningSDT-ack-up {
+	background-position: -234px -156px;
+}
+
+.icons24.alertsCleared-down {
+	background-position: -260px -156px;
+}
+
+.icons24.alertsCleared-up {
+	background-position: -286px -156px;
+}
+
+.icons24.alertsColumnHead-desc {
+	background-position: -314px -156px;
+}
+
+.icons24.alertsColumnHead-asc {
+	background-position: -340px -156px;
+}
+
+.icons24.dragNDrop {
+	background-position: -156px -26px;
+}
+
+.icons24.aloneSDT {
+	background-position: -364px -104px;
+}
+
+.icons24.aloneSDTGray {
+	background-position: -390px -104px;
+}
+
+.icons24.aloneSDT-down {
+	background-position: -364px -156px;
+}
+
+.icons24.aloneSDT-up {
+	background-position: -390px -156px;
+}
+
+.icons24.folderGroup {
+	background-position: -260px 0;
+}
+
+.icons24.downBlack {
+	background-position: -208px 0;
+}
+
+.icons24.circleCheckmarkWhite {
+	background-position: -182px 0;
+}
+
+.icons24.circleXWhite {
+	background-position: -286px 0;
+}
+
+.icons24.circleCheckmarkGray {
+	background-position: -312px 0;
+}
+
+.icons24.circleXGray {
+	background-position: -338px 0;
+}
+
+.icons24.downArrowWhite {
+	background-position: -364px 0;
+}
+
+.icons24.downArrowGray {
+	background-position: -390px 0;
+}
+
+.icons24.folderGroupLarge {
+	background-position: -182px -26px;
+}
+
+.icons24.iconGraphWhite {
+	background-position: -208px -26px;
+}
+
+.icons24.iconGraphGray {
+	background-position: -234px -26px;
+}
+
+.icons24.iconGraphBlue {
+	background-position: -260px -26px;
+}
+
+.icons24.alertClusterWhite {
+	background-position: -286px -26px;
+}
+
+.icons24.alertClusterGray {
+	background-position: -312px -26px;
+}
+
+.icons24.alertClusterBlue {
+	background-position: -338px -26px;
+}
+
+.icons24.datasourceGray {
+	background-position: 0px -182px;
+}
+
+.icons24.datasourceWhite {
+	background-position: -26px -182px;
+}
+
+.icons24.datasourceGroupGray {
+	background-position: -52px -182px;
+}
+
+.icons24.datasourceGroupWhite {
+	background-position: -78px -182px;
+}
+
+.icons24.instanceGray {
+	background-position: -104px -182px;
+}
+
+.icons24.instanceWhite {
+	background-position: -130px -182px;
+}
+
+.icons24.instanceGroupGray {
+	background-position: -156px -182px;
+}
+
+.icons24.instanceGroupWhite {
+	background-position: -182px -182px;
+}
+
+.icons24.datapointGray {
+	background-position: -208px -182px;
+}
+
+.icons24.datapointWhite {
+	background-position: -234px -182px;
+}
+
+.icons24.datapointGroupGray {
+	background-position: -260px -182px;
+}
+
+.icons24.datapointGroupWhite {
+	background-position: -286px -182px;
+}
+
+.icons24.datapointBlue {
+	background-position: -314px -182px;
+}
+
+.icons24.netscanGray {
+	background-position: -286px -78px;
+}
+
+.icons24.netscanWhite {
+	background-position: -260px -78px;
+}
+
+.icons24.platformWindowsGray {
+	background-position: -338px -78px;
+}
+
+.icons24.platformWindowsWhite {
+	background-position: -312px -78px;
+}
+
+.icons24.platformLinuxGray {
+	background-position: -390px -78px;
+}
+
+.icons24.platformLinuxWhite {
+	background-position: -364px -78px;
+}
+
+.icons24.logWhite {
+	background-position: 0px -208px;
+}
+
+.icons24.logGray {
+	background-position: -26px -208px;
+}
+
+.icons24.upArrowWhite {
+	background-position: -390px -26px;
+}
+
+.icons24.arrowFlipPurple {
+	background-position: -52px -208px;
+}
+
+.icons24.arrowFlipWhite {
+	background-position: -78px -208px;
+}
+
+.icons24.emailGray {
+	background-position: -104px -208px;
+}
+
+.icons24.emailWhite {
+	background-position: -130px -208px;
+}
+
+.icons24.SMSGray {
+	background-position: -156px -208px;
+}
+
+.icons24.SMSWhite {
+	background-position: -182px -208px;
+}
+
+.icons24.phoneGray {
+	background-position: -208px -208px;
+}
+
+.icons24.phoneWhite {
+	background-position: -234px -208px;
+}
+
+.icons24.collectorGray {
+	background-position: -338px -182px;
+}
+
+.icons24.collectorWhite {
+	background-position: -364px -182px;
+}
+
+.icons24.collectorPurple {
+	background-position: -390px -182px;
+}
+
+.icons24.clouddeviceGray {
+	background-position: -260px -208px;
+}
+
+.icons24.clouddeviceWhite {
+	background-position: -286px -208px;
+}
+
+.icons24.clouddevicePurple {
+	background-position: -312px -208px;
+}
+
+.icons24.boldBlack {
+	background-position: 0px -234px;
+}
+
+.icons24.italicBlack {
+	background-position: -26px -234px;
+}
+
+.icons24.unorderedlistBlack {
+	background-position: -52px -234px;
+}
+
+.icons24.orderedlistBlack {
+	background-position: -78px -234px;
+}
+
+.icons24.linkBlack {
+	background-position: -104px -234px;
+}
+
+.icons24.H1Black {
+	background-position: -130px -234px;
+}
+
+.icons24.H2Black {
+	background-position: -156px -234px;
+}
+
+.icons24.imageBlack {
+	background-position: -182px -234px;
+}
+
+.icons24.showHTMLBlack {
+	background-position: -208px -234px;
+}
+
+.icons24.colorBlack {
+	background-position: -234px -234px;
+}
+
+/* 16px icons */
+.icons16.graph-blue {
+	background-position: 0 0;
+	width: 27px;
+}
+
+.icons16.table-blue {
+	background-position: -36px 0;
+}
+
+.icons16.clone-gray {
+	background-position: -54px 0;
+}
+
+.icons16.clone-purple {
+	background-position: -216px 0;
+}
+
+.icons16.edit-purple {
+	background-position: -72px 0;
+}
+
+.icons16.delete-purple {
+	background-position: -90px 0;
+}
+
+.icons16.delete-gray {
+	background-position: -252px 0;
+}
+
+.icons16.delete-white {
+	background-position: -270px 0;
+}
+
+.icons16.date-gray-small {
+	background-position: -108px 0;
+}
+
+.icons16.date-white-small {
+	background-position: -90px -72px;
+}
+
+.icons16.closeDialog-gray {
+	background-position: -126px 0;
+}
+
+.icons16.dragVertical-gray {
+	background-position: -144px 0;
+}
+
+.icons16.check-white-small {
+	background-position: -162px 0;
+}
+
+.icons16.tableSettings-gray {
+	background-position: -180px 0;
+}
+
+.icons16.search-gray {
+	background-position: -198px 0;
+}
+
+.icons16.sdt-white {
+	background-position: 0 -18px;
+}
+
+.icons16.sdt-red {
+	background-position: -18px -18px;
+}
+
+.icons16.sdt-blue {
+	background-position: -36px -18px;
+}
+
+.icons16.sdt-gray {
+	background-position: -54px -18px;
+}
+
+.icons16.alert-acked {
+	background-position: -72px -18px;
+}
+
+.icons16.alert-red {
+	background-position: -90px -18px;
+}
+
+.icons16.alert-gray {
+	background-position: -108px -18px;
+}
+
+.icons16.alert-blue {
+	background-position: -252px -36px;
+}
+
+.icons16.services-gray {
+	background-position: -126px -18px;
+}
+
+.icons16.download-gray {
+	background-position: -72px -90px;
+	width: 26px;
+}
+
+.icons16.download-white {
+	background-position: -144px -18px;
+	width: 26px;
+}
+
+.icons16.upload-gray {
+	background-position: -72px -18px;
+	width: 26px;
+}
+
+.icons16.upload-white {
+	background-position: -36px -90px;
+	width: 26px;
+}
+
+.icons16.goTo-gray {
+	background-position: -180px -18px;
+}
+
+.icons16.goTo-purple {
+	background-position: -198px -18px;
+}
+
+.icons16.goTo-white {
+	background-position: -216px -18px;
+}
+
+.icons16.visibility-gray {
+	background-position: -234px -18px;
+}
+
+.icons16.addToDash-purple {
+	background-position: -252px -18px;
+}
+
+.icons16.dashboards-gray {
+	background-position: -270px -18px;
+}
+
+.icons16.zoom-ltPurple {
+	background-position: 0 -36px;
+}
+
+.icons16.config-ltPurple {
+	background-position: -18px -36px;
+}
+
+.icons16.zoom-purple {
+	background-position: -36px -36px;
+}
+
+.icons16.config-purple {
+	background-position: -54px -36px;
+}
+
+.icons16.zoom-ltBlue {
+	background-position: -72px -36px;
+}
+
+.icons16.config-ltBlue {
+	background-position: -90px -36px;
+}
+
+.icons16.zoom-blue {
+	background-position: -108px -36px;
+}
+
+.icons16.config-blue {
+	background-position: -126px -36px;
+}
+
+.icons16.zoom-gray {
+	background-position: -144px -36px;
+}
+
+.icons16.config-gray {
+	background-position: -162px -36px;
+}
+
+.icons16.zoom-ltGray {
+	background-position: -180px -36px;
+}
+
+.icons16.config-ltGray {
+	background-position: -198px -36px;
+}
+
+.icons16.config-dkBlue {
+	background-position: -216px -36px;
+}
+
+.icons16.config-white {
+	background-position: -234px -36px;
+}
+
+.icons16.expand-left {
+	background-position: 0 -54px;
+}
+
+.icons16.expand-right {
+	background-position: -18px -54px;
+}
+
+.icons16.expand-up {
+	background-position: -36px -54px;
+}
+
+.icons16.expand-down {
+	background-position: -54px -54px;
+}
+
+.icons16.page-right {
+    background-position: -72px -54px;
+    width: 26px;
+    height: 12px;
+}
+
+.icons16.page-left {
+    background-position: -108px -54px;
+    width: 26px;
+    height: 12px;
+}
+
+.icons16.sectionArrow-purple {
+	background-position: -144px -54px;
+	width: 28px;
+}
+
+.icons16.sectionArrow-blue {
+	background-position: -180px -54px;
+	width: 28px;
+}
+
+.icons16.slideshow-blue {
+	background-position: -216px -54px;
+}
+
+.icons16.slideshow-gray {
+	background-position: -234px -54px;
+}
+
+.icons16.slideshow-white {
+	background-position: -216px -72px;
+}
+
+.icons16.slideshowStop-blue {
+	background-position: -252px -54px;
+}
+
+.icons16.slideshowStop-gray {
+	background-position: -252px -72px;
+}
+
+.icons16.slideshowStop-white {
+	background-position: -234px -72px;
+}
+
+.icons16.fullScreen-gray {
+	background-position: -270px -54px;
+}
+
+.icons16.fullScreenClose-gray {
+	background-position: -270px -72px;
+}
+
+.icons16.fullScreen-white {
+	background-position: -270px -90px;
+}
+
+.icons16.fullScreenClose-white {
+	background-position: -270px -108px;
+}
+
+.icons16.dead-black {
+	background-position: -0px -72px;
+}
+
+.icons16.collectorUnreachable-gray {
+	background-position: -18px -72px;
+}
+
+.icons16.opsNote-gray {
+	background-position: -36px -72px;
+}
+
+.icons16.opsNote-purple {
+	background-position: -126px -72px;
+}
+
+.icons16.opsNote-white {
+	background-position: -54px -72px;
+}
+
+.icons16.check-gray {
+	background-position: -72px -72px;
+}
+
+.icons16.check-white-ack {
+	background-position: -108px -72px;
+}
+
+.icons16.favoritesStar {
+	background-position: -144px -72px;
+}
+
+.icons16.favoritesStar-white {
+	background-position: -144px -90px;
+}
+
+.icons16.plusAdd {
+	background-position: -180px -72px;
+}
+
+.icons16.plusAdd-gray {
+	background-position: -198px -72px;
+}
+
+.icons16.legendOpenClose {
+	background-position: -234px 0;
+}
+
+.icons16.homeWhite {
+	background-position: -270px -36px;
+}
+
+.icons16.downArrow-white {
+	background-position: -162px -72px;
+}
+
+.icons16.roundCancel-white {
+	background-position: 0 -90px;
+}
+
+.icons16.roundCancel-gray {
+	background-position: -18px -90px;
+}
+
+.icons16.device-gray {
+	background-position: -108px -90px;
+}
+
+.icons16.device-white {
+	background-position: -126px -90px;
+}
+
+.icons16.log-gray {
+	background-position: -162px -90px;
+}
+
+.icons16.log-white {
+	background-position: -180px -90px;
+}
+
+.icons16.netscan-gray {
+	background-position: -198px -90px;
+}
+
+.icons16.netscan-white {
+	background-position: -216px -90px;
+}
+
+/* alert status circles */
+.circle20 {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+.circle20.multi {
+	width: 30px;
+	border-radius: 0;
+	position: relative;
+}
+
+.circle20.multi .circle20 {
+	display: block;
+	float: left;
+}
+
+.circle20.multi .circle20:last-child {
+	border: 2px solid white;
+	margin-top: -2px;
+	margin-left: -14px;
+}
+
+.circle20.critical {
+	background: #ea262b;
+}
+
+.circle20.error {
+	background: #fbac2d;
+}
+
+.circle20.warning {
+	background: #777777;
+}
+
+.circle20.acknowledged {
+	background: #1d9fcb;
+}
+
+.circle20.spacer {
+	background: #ffffff;
+}
+
+/* Loading Icons */
+.loading {
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+
+.loadingGray {
+	@include background(image-url('icons/loading-gray.gif', false, true));
+}
+
+.loadingWhite-onpurple {
+	@include background(image-url('icons/loading-white-onpurple.gif', false, true));
+}
+
+.loadingWhite-onblue {
+	@include background(image-url('icons/loading-white-onblue.gif', false, true));
+}
+
+.loading16 {
+	width: 16px;
+	height: 16px;
+}
+
+.loadingGray16 {
+	@include background(image-url('icons/loading-gray16.gif', false, true));
+}
+
+.loadingWhite-onpurple16 {
+	@include background(image-url('icons/loading-white-onpurple16.gif', false, true));
+}
+
+.loadingWhite-onblue16 {
+	@include background(image-url('icons/loading-white-onblue16.gif', false, true));
+}
+
+/* Error Images */
+.errorFigures {
+	@include background(image-url('icons/error-stickfigures.png', false, true));
+	width: 160px;
+	height: 160px;
+}
+
+.errorFiguresGeneralBlue {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.errorFiguresJediBlue {
+	background-position: -324px 0;
+	background-repeat: no-repeat;
+}
+
+.errorFiguresEmptyBlue {
+	background-position: -161px 0;
+	background-repeat: no-repeat;
+}
+
+.errorFiguresGeneralWhite {
+	background-position: 0 -163px;
+	background-repeat: no-repeat;
+}
+
+.errorFiguresJediWhite {
+	background-position: -324px -163px;
+	background-repeat: no-repeat;
+}
+
+.errorFiguresEmptyWhite {
+	background-position: -161px -163px;
+	background-repeat: no-repeat;
+}
+
+/* CSS Arrows */
+.gray-arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 5.5px 0 5.5px;
+	border-color: #888888 transparent transparent transparent;
+	display: inline-block;
+}

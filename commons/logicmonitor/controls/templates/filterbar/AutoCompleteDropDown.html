@@ -1,0 +1,12 @@
+<div class="clearfix">
+    <div class="styled-lookup" style="width: 170px;">
+        <input type="text" clas="filter-auto-complete" placeholder="{{textPlaceHolder}}">
+        <span class="icons24 handle"></span>
+    </div>
+    <a href="javascript:;" class="add-filter-item lm-button small-small animate purple"><span class="icons16 plusAdd"></span></a>
+</div>
+<div class="selected-con">
+    {{#each initFilters}}
+    <div class="filter-item"><span class="filter-item-text" data-select-value="{{filterValue}}">{{filterText}}</span><span class="icons16 roundCancel-gray del"></span></div>
+    {{/each}}
+</div>

@@ -1,0 +1,71 @@
+@import "./variable";
+
+@mixin button-theme($bgColor, $borderBottomColor, $bgHoverColor) {
+    background: $bgColor;
+    border-bottom: 2px solid $borderBottomColor;
+
+    &:hover {
+        background: $bgHoverColor;
+    }
+
+    &[disabled] {
+        background: $bgColor;
+    }
+
+    &:active {
+        @include transform(translate(0, 2px));
+        border-bottom: 1px solid $borderBottomColor;
+    }
+}
+/*logicmonitor buttons*/
+.lm-button, button.lm-button, a.lm-button {
+    font-size: 14px;
+    text-decoration: none;
+    @include border-radius(3px);
+    display: inline-block;
+    border: none;
+    outline: none;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+
+    > .icons16, > .icons24 {
+        vertical-align: middle;
+    }
+
+    &.small {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &.small-small {
+        padding-left: 3px;
+        padding-right: 3px;
+        line-height: 24px;
+        height: 24px;
+    }
+
+    &.purple {
+        @include button-theme($color-purple2, $color-dark-purple, $color-purple);
+        color: white;
+    }
+
+    &.blue {
+        @include button-theme($color-blue, $color-dark-blue, $color-light-blue);
+        color: white;
+    }
+
+    &.gray {
+        @include button-theme($color-gray7, $color-dark-gray, $color-gray8);
+        color: #333333;
+    }
+
+    &.green {
+      @include button-theme($color-green, $color-dark-green, $color-green);
+      color: white;
+    }
+
+    &.animate {
+        @include transition(all 0.1s);
+    }
+}

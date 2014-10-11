@@ -1,0 +1,51 @@
+/* -----------------------------------------
+    color definitions
+----------------------------------------- */
+$color-blue: #56b6d9;
+$color-light-blue: #97d7ef;
+$color-purple: #86549c;
+$color-green: #81ae49;
+$color-dark-gray: #333333;
+$color-light-gray: #afafaf;
+
+$color-purple2: #621f71;
+
+$color-dark-blue: #127ea5;
+$color-dark-purple: #33033e;
+$color-dark-green: #467034;
+$color-light-blue2: #daeff6;
+
+$color-gray1: #151515;
+$color-gray3: #5c5c5c;
+$color-gray4: #757575;
+$color-gray5: #959494;
+$color-gray7: #e1e1e1;
+$color-gray8: #f5f5f5;
+
+$color-critical-red: #ed1e24;
+$color-error-orange: #f26522;
+$color-warning-yellow: #ffcc00;
+$color-disabled-gray: $color-light-gray;
+$color-sdt-gray: $color-gray3;
+$color-ack-blue: $color-blue;
+$color-cleared-green: $color-green;
+
+
+//== Tooltips
+//
+//##
+
+$zindex-tooltip: 1070 !default;
+
+//** Tooltip max width
+$tooltip-max-width:           600px !default;
+//** Tooltip text color
+$tooltip-color:               #fff !default;
+//** Tooltip background color
+$tooltip-bg:                  #757575 !default;
+$tooltip-opacity:             .9 !default;
+
+//** Tooltip arrow width
+$tooltip-arrow-width:         5px !default;
+//** Tooltip arrow color
+$tooltip-arrow-color:         $tooltip-bg !default;

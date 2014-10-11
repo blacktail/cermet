@@ -1,0 +1,7 @@
+<span class="total">{{total}} {{label}}</span>
+<span class="pager-splitter"></span>
+<span class="pager-prev pager-arrow"><span class="icons16 page-left"></span></span>
+{{#each range}}
+<span class="pager-num {{#ifequal this ../pageIndex}}cur{{/ifequal}}">{{this}}</span>
+{{/each}}
+<span class="pager-next pager-arrow"><span class="icons16 page-right"></span></span>

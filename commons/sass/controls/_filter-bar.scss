@@ -1,0 +1,100 @@
+@import "variable";
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+.lm-filter-bar {
+    cursor: pointer;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid transparent;
+    float: left;
+    padding: 0 10px;
+    border-radius: 2px;
+
+    .filter-label, .filter-text {
+        color: $color-gray4;
+        font-size: 16px;
+        font-weight: 500;
+        @include user-select(none);
+    }
+
+    .filter-text {
+        display: inline-block;
+        max-width: 210px;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    > * {
+        vertical-align: middle;
+    }
+
+    &:hover, &.focus {
+        border: 1px solid $color-gray5;
+    }
+
+    &.active {
+        .filter-text {
+            color: $color-blue;
+        }
+
+        &.hide-active-label {
+            .filter-label {
+                display: none;
+            }
+        }
+    }
+}
+
+/* filter bar style*/
+.lm-filter-checkbox-dropdown {
+    .filter-row {
+        margin: 12px 0;
+        padding-left: 10px;
+
+        label {
+            font-size: 16px;
+            color: $color-gray4;
+        }
+    }
+}
+
+.lm-filter-radio-dropdown {
+    .filter-row {
+        margin: 12px 0;
+        padding-left: 10px;
+    }
+}
+
+.lm-filter-autocomplete-dropdown {
+    width: 245px;
+    padding: 10px;
+
+    .styled-lookup {
+        float: left;
+        width: 170px;
+    }
+    a.add-filter-item {
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .selected-con {
+        margin-top: 10px;
+        max-height: 300px;
+        margin-right: -10px;
+        overflow-y: auto;
+
+        .filter-item {
+            padding: 5px 0;
+            .icons16 {
+                vertical-align: middle;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

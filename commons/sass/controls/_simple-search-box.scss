@@ -1,0 +1,43 @@
+/* simple search */
+.simple-search-box {
+	position: relative;
+
+	input {
+		width: 100%;
+		padding-right: 20px;
+		font-size: 16px;
+	}
+
+	.clear-handle {
+		display: none;
+		position: absolute;
+		width: 26px;
+		height: 32px;
+		line-height: 28px;
+		right: 1px;
+		top: 1px;
+		border-left: solid 1px #ccc;
+		background: white;
+		text-align: center;
+		cursor: pointer;
+		font-size: 23px;
+		font-weight: 600;
+		color: #aaa;
+	}
+
+	.search-handle {
+		display: block;
+		position: absolute;
+		top: 9px;
+		right: 6px;
+	}
+
+	&.active {
+		.search-handle {
+			display: none;
+		}
+		.clear-handle {
+			display: block;
+		}
+	}
+}

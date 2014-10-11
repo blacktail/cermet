@@ -1,0 +1,58 @@
+@import "variable";
+
+.lm-pager {
+    text-align: center;
+    &, * {
+        @include user-select(none);
+    }
+    > * {
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        vertical-align: middle;
+    }
+
+    font-size: 14px;
+    color: $color-dark-gray;
+
+    .pager-splitter {
+        height: 22px;
+        width: 1px;
+        background: $color-dark-gray;
+        margin: 0 10px;
+    }
+
+    .pager-num {
+        padding: 0 5px;
+        text-align: center;
+
+        &.cur {
+            background: $color-blue;
+            color: white;
+
+            &:hover {
+                background: $color-blue;
+            }
+        }
+    }
+
+    .pager-num, .pager-arrow {
+        cursor: pointer;
+
+        &:hover {
+            background: $color-light-blue;
+            color: white;
+        }
+    }
+
+    .pager-arrow {
+        display: none;
+
+        .page-left {
+            background-position: -108px -52px;
+        }
+        .page-right {
+            background-position: -72px -52px;
+        }
+    }
+}

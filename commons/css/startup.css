@@ -1,3 +1,24 @@
-@import "./bootstrap.css";
-@import "./bootstrap-theme.css";
-@import "./app1.css";
+/*========= css reset begin ==========*/
+@import "./normalize.css";
+@import "./reset.css";
+/*========= css reset end   ==========*/
+
+
+/*========= 3rdparty css begin =======*/
+@import "./validationEngine.jquery.css";
+@import "./jquery-ui.css";
+@import "./jquery.timepickr.css";
+/*========= 3rdparty css end =========*/
+
+
+/*========= control css begin =======*/
+@import "./icons.css";
+@import "./control.css";
+/*========= control css end =========*/
+
+
+/*========= common css begin =======*/
+@import "./common.css";
+/*========= common css end =========*/
+
+

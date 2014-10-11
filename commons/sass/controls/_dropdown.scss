@@ -1,0 +1,13 @@
+@import "compass/css3";
+
+.lm-dropdown {
+    position: absolute;
+    display: none;
+    @include box-shadow(2px 2px 5px #666);
+    border-radius: 4px;
+    background: white;
+    border: solid 1px #ccc;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+}

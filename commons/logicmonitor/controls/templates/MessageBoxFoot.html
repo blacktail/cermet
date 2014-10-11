@@ -1,0 +1,13 @@
+{{#ifequal type "alert"}}
+<button class="lm-button animate purple btn-close">Close</button>
+{{else}}
+
+    {{#ifequal type "confirm"}}
+        <button class="lm-button animate purple btn-ok" >Ok</button>
+    {{else}}
+        <button class="lm-button animate purple btn-submit" >Submit</button>
+    {{/ifequal}}
+
+    <button class="lm-button animate gray btn-cancel" >Cancel</button>
+{{/ifequal}}
+
